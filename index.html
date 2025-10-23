@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date a Techie: A Mark Cuban Dating Simulator</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Background Music -->
+        <audio id="bgMusic" loop>
+            <source src="BackgroundMusic.mp3" type="audio/mpeg">
+        </audio>
+        
+        <!-- Title Screen Music -->
+        <audio id="titleMusic" loop>
+            <source src="TitleMenuMusic.mp3" type="audio/mpeg">
+        </audio>
+        
+        <!-- Character Selection Sounds -->
+        <audio id="sparkleSound">
+            <source src="CharacterSelectScreen/Sparklesound.mp3" type="audio/mpeg">
+        </audio>
+        
+        <audio id="markCubanSound">
+            <source src="CharacterSelectScreen/MarkCuban.mp3" type="audio/mpeg">
+        </audio>
+        
+        <audio id="jensenHuangSound">
+            <source src="CharacterSelectScreen/JensenHuang.mp3" type="audio/mpeg">
+        </audio>
+        
+        <!-- Background -->
+        <div class="background" id="background"></div>
+        
+        <!-- Character Sprites -->
+        <div class="character-container" id="characterContainer">
+            <img id="characterSprite" class="character-sprite" src="" alt="Mark Cuban" draggable="false">
+        </div>
+        <div class="character-container character-container-left" id="secondCharacterContainer">
+            <img id="secondCharacterSprite" class="character-sprite" src="" alt="Second Character" draggable="false">
+        </div>
+        <div class="character-container character-container-center" id="thirdCharacterContainer">
+            <img id="thirdCharacterSprite" class="character-sprite" src="" alt="Third Character" draggable="false">
+        </div>
+        
+        <!-- UI Container -->
+        <div class="ui-container">
+            <!-- Dialogue Box -->
+            <div class="dialogue-box" id="dialogueBox">
+                <div class="character-name" id="characterName"></div>
+                <div class="dialogue-text" id="dialogueText"></div>
+                <div class="continue-indicator" id="continueIndicator">▼</div>
+            </div>
+            
+            <!-- Choice Container -->
+            <div class="choice-container" id="choiceContainer"></div>
+        </div>
+        
+        <!-- Splash Screen -->
+        <div class="splash-screen" id="splashScreen">
+            <!-- Cherry Blossom Petals Container -->
+            <div class="petals-container" id="splashPetalsContainer"></div>
+            
+            <img src="DateATechie-Logo.png" alt="Date a Techie" class="splash-logo" draggable="false">
+            <p class="splash-text">Click to play</p>
+        </div>
+        
+        <!-- Title Screen -->
+        <div class="title-screen" id="titleScreen">
+            <img src="TitleScreen.png" alt="Background" class="title-bg" draggable="false">
+            
+            <!-- Cherry Blossom Petals Container -->
+            <div class="petals-container" id="petalsContainer"></div>
+            
+            <!-- Left Panel with Menu -->
+            <div class="title-panel">
+                <img src="DateATechie-Logo.png" alt="Date a Techie" class="title-main-logo" draggable="false">
+                
+                <div class="title-buttons">
+                    <button class="title-btn start-btn" id="startButton">
+                        <img src="heart-icon.svg" alt="" class="btn-icon" draggable="false">
+                        Start Game!
+                    </button>
+                    <button class="title-btn settings-btn">
+                        <img src="settings-icon.svg" alt="" class="btn-icon" draggable="false">
+                        Settings
+                    </button>
+                    <button class="title-btn twitter-btn" onclick="window.open('https://twitter.com/immike_wing', '_blank')">
+                        <img src="twitter-icon.svg" alt="" class="btn-icon" draggable="false">
+                        Twitter
+                    </button>
+                </div>
+                
+                <p class="title-footer">Made by @immike_wing</p>
+            </div>
+            
+            <!-- Characters Container -->
+            <div class="title-characters">
+                <img src="Characters/MarkZuckeberg/MarkZuck.png" alt="Mark Zuckerberg" class="title-char title-char-1" draggable="false">
+                <img src="Characters/JensenHuang/JensenHuang.png" alt="Jensen Huang" class="title-char title-char-2" draggable="false">
+                <img src="Characters/MarkCuban/MarkCuban.png" alt="Mark Cuban" class="title-char title-char-3" draggable="false">
+            </div>
+            
+            <!-- Bottom Right Logo -->
+            <img src="PlumLogo.png" alt="Plum Logo" class="plum-logo" draggable="false">
+        </div>
+        
+        <!-- Ending Screen -->
+        <div class="ending-screen" id="endingScreen">
+            <div class="ending-content">
+                <h2 class="ending-title" id="endingTitle"></h2>
+                <p class="ending-description" id="endingDescription"></p>
+                <img class="ending-image" id="endingImage" src="" alt="Ending" draggable="false">
+                <button class="restart-button" id="restartButton">Play Again</button>
+            </div>
+        </div>
+        
+        <!-- Transition Screen -->
+        <div class="transition-screen" id="transitionScreen">
+            <div class="transition-text" id="transitionText"></div>
+        </div>
+        
+        <!-- Character Selection Screen -->
+        <div class="character-selection-screen hidden" id="characterSelectionScreen">
+            <!-- Cherry Blossom Petals Container -->
+            <div class="petals-container" id="selectionPetalsContainer"></div>
+            
+            <div class="selection-header">
+                <div class="selection-label">
+                    <img src="CharacterSelectScreen/chapter-select-banner-new.svg" alt="" class="label-banner" draggable="false">
+                    <img src="CharacterSelectScreen/chapter-select-icon-new.svg" alt="" class="label-icon" draggable="false">
+                    <span>Chapter Select</span>
+                </div>
+            </div>
+            
+            <div class="selection-container">
+                <div class="selection-card" data-character="jensen" draggable="false">
+                    <img src="CharacterSelectScreen/JensenSelect.png" alt="Jensen Huang" class="card-image" draggable="false">
+                    <img src="CharacterSelectScreen/JensenHuangNameTag.png" alt="Jensen Huang" class="card-nametag" draggable="false">
+                </div>
+                
+                <div class="selection-card" data-character="cuban" draggable="false">
+                    <img src="CharacterSelectScreen/MarkCubanSelect.png" alt="Mark Cuban" class="card-image" draggable="false">
+                    <img src="CharacterSelectScreen/MarkCubanNameTag.png" alt="Mark Cuban" class="card-nametag" draggable="false">
+                </div>
+                
+                <div class="selection-card" data-character="zuckerberg" draggable="false">
+                    <img src="CharacterSelectScreen/MarkZuckSelect.png" alt="Mark Zuckerberg" class="card-image" draggable="false">
+                    <img src="CharacterSelectScreen/MarkZuckNameTag.png" alt="Mark Zuckerberg" class="card-nametag" draggable="false">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
+
