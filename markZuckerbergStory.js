@@ -22,7 +22,7 @@ export const markZuckerbergStory = [
     // Scene 0: Welcome to Facebook
     {
         background: "facebook",
-        character: "neutral",
+        character: null,
         speaker: "Narrator",
         text: "You've been invited to Facebook's headquarters in Menlo Park for a special meeting. The campus buzzes with innovation, and you can feel the energy of the world's largest social network all around you.",
         choices: null,
@@ -31,7 +31,7 @@ export const markZuckerbergStory = [
     // Scene 1: The reception
     {
         background: "facebook",
-        character: "neutral",
+        character: null,
         speaker: "Receptionist",
         text: "Welcome to Facebook! Mark is expecting you. He's in his office on the second floor. You can take the elevator or the stairs.",
         choices: [
@@ -52,7 +52,7 @@ export const markZuckerbergStory = [
     // Scene 2: Elevator ride
     {
         background: "facebook",
-        character: "neutral",
+        character: null,
         speaker: "Narrator",
         text: "The elevator is sleek and modern, with Facebook's signature blue branding. As you ascend, you can see the open office spaces through the glass walls. The atmosphere is casual yet professional.",
         choices: null,
@@ -61,7 +61,7 @@ export const markZuckerbergStory = [
     // Scene 3: Staircase encounter
     {
         background: "facebook",
-        character: "neutral",
+        character: null,
         speaker: "Narrator",
         text: "You take the stairs and notice the vibrant murals and motivational quotes on the walls. A few employees pass by, all wearing casual attire and carrying laptops. The culture here is clearly different from traditional corporate environments.",
         choices: null,
@@ -70,7 +70,7 @@ export const markZuckerbergStory = [
     // Scene 4: Campus tour
     {
         background: "facebook",
-        character: "neutral",
+        character: null,
         speaker: "Receptionist",
         text: "This campus is amazing! We have everything here - restaurants, a gym, even a barbershop. Mark believes in creating an environment where people want to spend time, not just work.",
         choices: null,
@@ -79,7 +79,7 @@ export const markZuckerbergStory = [
     // Scene 5: Mark's office door
     {
         background: "facebook",
-        character: "neutral",
+        character: null,
         speaker: "Narrator",
         text: "You arrive at Mark's office. The door is slightly ajar, and you can hear the sound of typing. You knock gently.",
         choices: null,
@@ -88,7 +88,7 @@ export const markZuckerbergStory = [
     // Scene 6: First meeting
     {
         background: "facebook",
-        character: "neutral",
+        character: null,
         speaker: "Mark Zuckerberg",
         text: "Come in! You must be the person I've been hearing so much about. I'm Mark. Please, have a seat.",
         choices: null,
