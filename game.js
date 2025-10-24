@@ -907,23 +907,39 @@ function updateVolume() {
 
 // Mobile detection function
 function isMobileDevice() {
-    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || 
-           window.innerWidth <= 768;
+    const userAgent = navigator.userAgent;
+    const isMobileUA = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
+    const isMobileWidth = window.innerWidth <= 768;
+    
+    console.log('User Agent:', userAgent);
+    console.log('Window Width:', window.innerWidth);
+    console.log('Is Mobile UA:', isMobileUA);
+    console.log('Is Mobile Width:', isMobileWidth);
+    
+    return isMobileUA || isMobileWidth;
 }
 
 // Show mobile screen if on mobile device
 function checkMobileDevice() {
+    console.log('Checking mobile device...');
     if (isMobileDevice()) {
+        console.log('Mobile device detected, showing mobile screen');
         // Hide all other screens
-        splashScreen.style.display = 'none';
-        titleScreen.classList.add('hidden');
-        characterSelectionScreen.classList.add('hidden');
-        endingScreen.classList.remove('active');
+        if (splashScreen) splashScreen.style.display = 'none';
+        if (titleScreen) titleScreen.classList.add('hidden');
+        if (characterSelectionScreen) characterSelectionScreen.classList.add('hidden');
+        if (endingScreen) endingScreen.classList.remove('active');
         
         // Show mobile screen
-        mobileScreen.classList.remove('hidden');
+        if (mobileScreen) {
+            mobileScreen.classList.remove('hidden');
+            console.log('Mobile screen should be visible now');
+        } else {
+            console.error('Mobile screen element not found');
+        }
         return true;
     }
+    console.log('Not a mobile device, continuing with normal initialization');
     return false;
 }
 
@@ -940,6 +956,25 @@ window.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         autoStartFromRoute();
     }, 100);
+});
+
+// Debug function to force show mobile screen (temporary)
+window.showMobileScreen = function() {
+    console.log('Force showing mobile screen for debugging');
+    if (mobileScreen) {
+        mobileScreen.classList.remove('hidden');
+        console.log('Mobile screen should now be visible');
+    } else {
+        console.error('Mobile screen element not found');
+    }
+};
+
+// Also check on window resize
+window.addEventListener('resize', () => {
+    console.log('Window resized, checking mobile device again...');
+    if (isMobileDevice()) {
+        checkMobileDevice();
+    }
 });
 
 
