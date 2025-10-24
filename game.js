@@ -55,28 +55,40 @@ let enableMusicListener = null; // Store reference to the listener
 
 // Initialize the game
 function init() {
-    // Get DOM elements
-    dialogueBox = document.getElementById('dialogueBox');
-    characterName = document.getElementById('characterName');
-    dialogueText = document.getElementById('dialogueText');
-    continueIndicator = document.getElementById('continueIndicator');
-    choiceContainer = document.getElementById('choiceContainer');
-    characterSprite = document.getElementById('characterSprite');
-    background = document.getElementById('background');
-    characterContainer = document.getElementById('characterContainer');
-    secondCharacterContainer = document.getElementById('secondCharacterContainer');
-    secondCharacterSprite = document.getElementById('secondCharacterSprite');
-    thirdCharacterContainer = document.getElementById('thirdCharacterContainer');
-    thirdCharacterSprite = document.getElementById('thirdCharacterSprite');
-    titleScreen = document.getElementById('titleScreen');
-    startButton = document.getElementById('startButton');
-    endingScreen = document.getElementById('endingScreen');
-    restartButton = document.getElementById('restartButton');
-    menuButton = document.getElementById('menuButton');
-    characterSelectionScreen = document.getElementById('characterSelectionScreen');
-    characterCards = document.querySelectorAll('.selection-card');
-    chapterSelectButton = document.querySelector('#characterSelectionScreen .selection-label');
-    gameplayChapterSelect = document.getElementById('gameplayChapterSelect');
+    console.log('Initializing game...');
+    try {
+        // Get DOM elements
+        dialogueBox = document.getElementById('dialogueBox');
+        characterName = document.getElementById('characterName');
+        dialogueText = document.getElementById('dialogueText');
+        continueIndicator = document.getElementById('continueIndicator');
+        choiceContainer = document.getElementById('choiceContainer');
+        characterSprite = document.getElementById('characterSprite');
+        background = document.getElementById('background');
+        characterContainer = document.getElementById('characterContainer');
+        secondCharacterContainer = document.getElementById('secondCharacterContainer');
+        secondCharacterSprite = document.getElementById('secondCharacterSprite');
+        thirdCharacterContainer = document.getElementById('thirdCharacterContainer');
+        thirdCharacterSprite = document.getElementById('thirdCharacterSprite');
+        titleScreen = document.getElementById('titleScreen');
+        startButton = document.getElementById('startButton');
+        endingScreen = document.getElementById('endingScreen');
+        restartButton = document.getElementById('restartButton');
+        menuButton = document.getElementById('menuButton');
+        characterSelectionScreen = document.getElementById('characterSelectionScreen');
+        characterCards = document.querySelectorAll('.selection-card');
+        chapterSelectButton = document.querySelector('#characterSelectionScreen .selection-label');
+        gameplayChapterSelect = document.getElementById('gameplayChapterSelect');
+        
+        console.log('DOM elements found:', {
+            titleScreen: !!titleScreen,
+            startButton: !!startButton,
+            characterSelectionScreen: !!characterSelectionScreen
+        });
+    } catch (error) {
+        console.error('Error in init function:', error);
+        throw error;
+    }
     bgMusic = document.getElementById('bgMusic');
     titleMusic = document.getElementById('titleMusic');
     sparkleSound = document.getElementById('sparkleSound');
@@ -302,15 +314,31 @@ function createSelectionPetals() {
 
 // Show character selection screen
 function showCharacterSelection() {
-    // Remove the title music click listener if it exists
-    if (enableMusicListener) {
-        document.removeEventListener('click', enableMusicListener);
-        enableMusicListener = null;
+    console.log('showCharacterSelection called');
+    try {
+        // Remove the title music click listener if it exists
+        if (enableMusicListener) {
+            document.removeEventListener('click', enableMusicListener);
+            enableMusicListener = null;
+        }
+        
+        // Hide title screen and show character selection
+        if (titleScreen) {
+            titleScreen.classList.add('hidden');
+            console.log('Title screen hidden');
+        } else {
+            console.error('titleScreen element not found');
+        }
+        
+        if (characterSelectionScreen) {
+            characterSelectionScreen.classList.remove('hidden');
+            console.log('Character selection screen shown');
+        } else {
+            console.error('characterSelectionScreen element not found');
+        }
+    } catch (error) {
+        console.error('Error in showCharacterSelection:', error);
     }
-    
-    // Hide title screen and show character selection
-    titleScreen.classList.add('hidden');
-    characterSelectionScreen.classList.remove('hidden');
     
     // Initialize cherry blossom petals for selection screen
     createSelectionPetals();
@@ -809,12 +837,18 @@ function autoStartFromRoute() {
 
 // Initialize when page loads
 window.addEventListener('DOMContentLoaded', () => {
-    init();
-    
-    // Check if we should auto-start from URL
-    setTimeout(() => {
-        autoStartFromRoute();
-    }, 100);
+    console.log('DOM loaded, initializing game...');
+    try {
+        init();
+        console.log('Game initialized successfully');
+        
+        // Check if we should auto-start from URL
+        setTimeout(() => {
+            autoStartFromRoute();
+        }, 100);
+    } catch (error) {
+        console.error('Error initializing game:', error);
+    }
 });
 
 
