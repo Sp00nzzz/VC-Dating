@@ -2,18 +2,18 @@
 
 // Character sprites for Mark Zuckerberg
 export const sprites = {
-    neutral: "Characters/MarkZuckeberg/MarkZuck.png",
-    affectionate: "Characters/MarkZuckeberg/MarkZuck.png",
-    angry: "Characters/MarkZuckeberg/MarkZuck.png",
-    annoyed: "Characters/MarkZuckeberg/MarkZuck.png",
-    blush: "Characters/MarkZuckeberg/MarkZuck.png",
-    confused: "Characters/MarkZuckeberg/MarkZuck.png",
-    flustered: "Characters/MarkZuckeberg/MarkZuck.png",
-    laugh: "Characters/MarkZuckeberg/MarkZuck.png",
-    nervous: "Characters/MarkZuckeberg/MarkZuck.png",
-    pained: "Characters/MarkZuckeberg/MarkZuck.png",
-    sad: "Characters/MarkZuckeberg/MarkZuck.png",
-    surprised: "Characters/MarkZuckeberg/MarkZuck.png"
+    neutral: "/Characters/MarkZuckeberg/MarkZuck.png",
+    affectionate: "/Characters/MarkZuckeberg/MarkZuck.png",
+    angry: "/Characters/MarkZuckeberg/MarkZuck.png",
+    annoyed: "/Characters/MarkZuckeberg/MarkZuck.png",
+    blush: "/Characters/MarkZuckeberg/MarkZuck.png",
+    confused: "/Characters/MarkZuckeberg/MarkZuck.png",
+    flustered: "/Characters/MarkZuckeberg/MarkZuck.png",
+    laugh: "/Characters/MarkZuckeberg/MarkZuck.png",
+    nervous: "/Characters/MarkZuckeberg/MarkZuck.png",
+    pained: "/Characters/MarkZuckeberg/MarkZuck.png",
+    sad: "/Characters/MarkZuckeberg/MarkZuck.png",
+    surprised: "/Characters/MarkZuckeberg/MarkZuck.png"
 };
 
 // Mark Zuckerberg Story Array

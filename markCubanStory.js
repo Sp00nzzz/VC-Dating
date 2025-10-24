@@ -1,18 +1,18 @@
 // Mark Cuban Story - Shark Tank Route
 // Character sprites for Mark Cuban
 export const sprites = {
-    neutral: "Characters/MarkCuban/MarkCuban.png",
-    angry: "Characters/MarkCuban/MarkCubanAngry.png",
-    blush: "Characters/MarkCuban/MarkCubanBlush.png",
-    laugh: "Characters/MarkCuban/MarkCubanLaugh.png",
-    sad: "Characters/MarkCuban/MarkCubanSad.png",
-    surprised: "Characters/MarkCuban/MarkCubanSuprised.png",
-    affectionate: "Characters/MarkCuban/MarkCubanAffectionate.png",
-    annoyed: "Characters/MarkCuban/MarkCubanAnnoyed.png",
-    confused: "Characters/MarkCuban/MarkCubanConfused.png",
-    flustered: "Characters/MarkCuban/MarkCubanFlustered.png",
-    nervous: "Characters/MarkCuban/MarkCubanNervous.png",
-    pained: "Characters/MarkCuban/MarkCubanPained.png"
+    neutral: "/Characters/MarkCuban/MarkCuban.png",
+    angry: "/Characters/MarkCuban/MarkCubanAngry.png",
+    blush: "/Characters/MarkCuban/MarkCubanBlush.png",
+    laugh: "/Characters/MarkCuban/MarkCubanLaugh.png",
+    sad: "/Characters/MarkCuban/MarkCubanSad.png",
+    surprised: "/Characters/MarkCuban/MarkCubanSuprised.png",
+    affectionate: "/Characters/MarkCuban/MarkCubanAffectionate.png",
+    annoyed: "/Characters/MarkCuban/MarkCubanAnnoyed.png",
+    confused: "/Characters/MarkCuban/MarkCubanConfused.png",
+    flustered: "/Characters/MarkCuban/MarkCubanFlustered.png",
+    nervous: "/Characters/MarkCuban/MarkCubanNervous.png",
+    pained: "/Characters/MarkCuban/MarkCubanPained.png"
 };
 
 // Mark Cuban Story Array

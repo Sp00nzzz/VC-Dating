@@ -13,20 +13,20 @@ const gameState = {
 
 // Side character sprites
 const mrWonderfulSprites = {
-    neutral: "Characters/Sharks/MrWonderful.png",
+    neutral: "/Characters/Sharks/MrWonderful.png",
 
 };
 
 const loriSprites = {
-    neutral: "Characters/Sharks/Lori.png"
+    neutral: "/Characters/Sharks/Lori.png"
 };
 
 const directorSprites = {
-    neutral: "Characters/SideCharacters/Director.png"
+    neutral: "/Characters/SideCharacters/Director.png"
 };
 
 const producerSprites = {
-    neutral: "Characters/SideCharacters/Producer.png"
+    neutral: "/Characters/SideCharacters/Producer.png"
 };
 
 // Merge all endings
@@ -56,11 +56,11 @@ let enableMusicListener = null; // Store reference to the listener
 // Test image loading for debugging
 function testImageLoading() {
     const testImages = [
-        'TitleScreen.png',
-        'DateATechie-Logo.png',
-        'Characters/MarkCuban/MarkCuban.png',
-        'Characters/JensenHuang/JensenHuang.png',
-        'Characters/MarkZuckeberg/MarkZuck.png'
+        '/TitleScreen.png',
+        '/DateATechie-Logo.png',
+        '/Characters/MarkCuban/MarkCuban.png',
+        '/Characters/JensenHuang/JensenHuang.png',
+        '/Characters/MarkZuckeberg/MarkZuck.png'
     ];
     
     testImages.forEach(src => {
@@ -194,7 +194,7 @@ function hideSplashScreen() {
     
     // Preload title screen background
     const titleBg = new Image();
-    titleBg.src = './TitleScreen.png';
+    titleBg.src = '/TitleScreen.png';
     
     // Function to transition to title screen
     const transitionToTitle = () => {

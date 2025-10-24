@@ -2,18 +2,18 @@
 
 // Character sprites for Jensen Huang
 export const sprites = {
-    neutral: "Characters/JensenHuang/JensenHuang.png",
-    affectionate: "Characters/JensenHuang/JensenDreamy.png",
-    angry: "Characters/JensenHuang/JensenAngry.png",
-    annoyed: "Characters/JensenHuang/JensenAngry.png",
-    blush: "Characters/JensenHuang/JensenBlushed.png",
-    confused: "Characters/JensenHuang/JensenConfused.png",
-    flustered: "Characters/JensenHuang/JensenBlushed.png",
-    laugh: "Characters/JensenHuang/JensenLaughing.png",
-    nervous: "Characters/JensenHuang/JensenNervous.png",
-    pained: "Characters/JensenHuang/JensenPained.png",
-    sad: "Characters/JensenHuang/JensenSad.png",
-    surprised: "Characters/JensenHuang/JensenSuprised.png"
+    neutral: "/Characters/JensenHuang/JensenHuang.png",
+    affectionate: "/Characters/JensenHuang/JensenDreamy.png",
+    angry: "/Characters/JensenHuang/JensenAngry.png",
+    annoyed: "/Characters/JensenHuang/JensenAngry.png",
+    blush: "/Characters/JensenHuang/JensenBlushed.png",
+    confused: "/Characters/JensenHuang/JensenConfused.png",
+    flustered: "/Characters/JensenHuang/JensenBlushed.png",
+    laugh: "/Characters/JensenHuang/JensenLaughing.png",
+    nervous: "/Characters/JensenHuang/JensenNervous.png",
+    pained: "/Characters/JensenHuang/JensenPained.png",
+    sad: "/Characters/JensenHuang/JensenSad.png",
+    surprised: "/Characters/JensenHuang/JensenSuprised.png"
 };
 
 // Game Story - Jensen Huang Route
