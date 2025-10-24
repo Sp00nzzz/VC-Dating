@@ -69,6 +69,10 @@ body {
     background: url('Scenes/NVIDIAOffice.png') center center / cover no-repeat;
 }
 
+.background.dennys {
+    background: url('Scenes/Denny.png') center center / cover no-repeat;
+}
+
 .background.outdoor {
     background: url('Scenes/OutdoorBackground.png') center center / cover no-repeat;
 }

@@ -14,8 +14,7 @@ const gameState = {
 // Side character sprites
 const mrWonderfulSprites = {
     neutral: "Characters/Sharks/MrWonderful.png",
-    confused: "Characters/Sharks/MrWonderful.png",
-    annoyed: "Characters/Sharks/MrWonderful.png"
+
 };
 
 const loriSprites = {

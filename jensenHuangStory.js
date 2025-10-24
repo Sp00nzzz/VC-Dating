@@ -90,7 +90,7 @@ export const jensenHuangStory = [
         background: "outdoor",
         character: null,
         speaker: "You",
-        text: "*panicking* Oh no, no, no! My research! *drops to knees, trying to catch papers* I'm so sorry, I wasn't looking where I was— *frantically gathering papers* This is all my work for tomorrow's presentation!",
+        text: "Okay, full-on panic. Oh no—my research! I'm so sorry, I wasn't looking. Papers everywhere. This is my entire deck for tomorrow!",
         choices: null,
         nextScene: 7
     },
@@ -99,7 +99,7 @@ export const jensenHuangStory = [
         background: "outdoor",
         character: "laugh",
         speaker: "Jensen Huang",
-        text: "*chasing down papers* Hey, it's okay! I've got this one— *catches a page mid-air* Wait a second... *starts reading while still on his feet* Neural acceleration through dynamic tensor restructuring? *his eyes widen* This is... this is brilliant work.",
+        text: "He sprints after the papers. 'Hey, it's okay! I’ve got this one.' He snags a page mid-air and scans it. 'Neural acceleration through dynamic tensor restructuring?' His eyes go wide. 'This is... brilliant.'",
         choices: null,
         nextScene: 8
     },
@@ -117,7 +117,7 @@ export const jensenHuangStory = [
         background: "outdoor",
         character: "affectionate",
         speaker: "Jensen Huang",
-        text: "*still reading, completely absorbed* This is... *looks up at you* You wrote this? *kneels down to help gather more papers* This optimization approach - we've been trying to crack this for months. The way you've structured the neural network architecture... it's elegant. Most researchers focus on the algorithms, but you're thinking about the hardware constraints.",
+        text: "Still reading, totally absorbed: 'This is...' He looks up. 'You wrote this?' He kneels to help. 'We’ve been trying to crack this for months. Your architecture is elegant—most people chase algorithms; you respect the hardware.'",
         choices: null,
         nextScene: 10
     },
@@ -126,7 +126,7 @@ export const jensenHuangStory = [
         background: "outdoor",
         character: "neutral",
         speaker: "Jensen Huang",
-        text: "*helping organize your papers* You're presenting at GTC, aren't you? *glances at your conference badge* I should know - I approved the research track. But somehow I missed THIS. What's your name? *his eyes are alight with genuine curiosity*",
+        text: "He stacks your papers into a clean pile. 'You're presenting at GTC, right?' He clocks your badge. 'I approved the track and still missed this. What’s your name?' His curiosity practically glows.",
         choices: null,
         nextScene: 11
     },
@@ -144,7 +144,7 @@ export const jensenHuangStory = [
         background: "outdoor",
         character: "surprised",
         speaker: "Jensen Huang",
-        text: "*his eyes widening* Wait, you're using quantum-inspired optimization for the tensor decomposition? That's... that's brilliant. We've been approaching this from the wrong angle entirely. *leans in closer* Tell me more about your approach to the memory hierarchy. The way you've structured the data flow... it's revolutionary.",
+        text: "His eyes widen. 'Wait, you’re using quantum‑inspired optimization for tensor decomposition? That’s brilliant. We were aiming from the wrong angle.' He leans in. 'Walk me through your memory hierarchy—your data flow is borderline revolutionary.'",
         choices: [
             {
                 text: "Explain your technical approach in detail",
@@ -165,7 +165,7 @@ export const jensenHuangStory = [
         background: "outdoor",
         character: "affectionate",
         speaker: "Jensen Huang",
-        text: "*listening intently* This is exactly what we need. Your approach to dynamic memory allocation could solve problems we've been wrestling with for years. *pauses, studying your equations* The way you've optimized the tensor operations... it's not just efficient, it's beautiful. I have to see more of your work. This could change everything.",
+        text: "He listens like he’s profiling every line. 'This is exactly what we need. Your dynamic memory approach patches issues we’ve wrestled with for years.' He studies your equations. 'Those tensor ops aren’t just efficient—they’re beautiful. I need to see more.'",
         choices: null,
         nextScene: 16
     },
@@ -174,7 +174,7 @@ export const jensenHuangStory = [
         background: "outdoor",
         character: "nervous",
         speaker: "Jensen Huang",
-        text: "*his expression becomes more serious* We're hitting walls with traditional approaches. The computational demands are growing exponentially, but our current architectures... *looks at your papers* Your work might be the breakthrough we've been waiting for. The way you've reimagined the memory hierarchy could solve bottlenecks we've been struggling with for years.",
+        text: "His expression firms. 'We’re slamming into walls with old approaches. Demand’s exponential—the architecture isn’t.' He nods at your pages. 'Your reimagined memory hierarchy could finally crack our bottlenecks.'",
         choices: null,
         nextScene: 16
     },
@@ -183,7 +183,7 @@ export const jensenHuangStory = [
         background: "outdoor",
         character: "laugh",
         speaker: "Jensen Huang",
-        text: "*his eyes light up* You see it too, don't you? The convergence of AI and real-time rendering, the democratization of computational power. *gestures to your papers* This is how we get there. This is the future. The way you've structured the neural network optimization... it's not just about making things faster, it's about making the impossible possible.",
+        text: "His eyes light up. 'You see it—the merge of AI and real‑time rendering, compute for everyone.' He taps your work. 'This is the path. Your optimization isn’t just speed—it makes the impossible shippable.'",
         choices: null,
         nextScene: 16
     },
@@ -192,7 +192,7 @@ export const jensenHuangStory = [
         background: "outdoor",
         character: "neutral",
         speaker: "Jensen Huang",
-        text: "*studying your papers more carefully* The way you've structured the neural network architecture... it's elegant. Most researchers focus on the algorithms, but you're thinking about the hardware constraints. That's engineering thinking. *looks up at you* You understand that technology isn't just about the software - it's about the entire system.",
+        text: "He scrutinizes the pages. 'Your architecture is elegant. Most people chase algorithms; you respect the hardware. That’s real engineering.' He looks up. 'Tech isn’t just software—it’s the whole system.'",
         choices: null,
         nextScene: 17
     },
@@ -201,7 +201,7 @@ export const jensenHuangStory = [
         background: "outdoor",
         character: "blush",
         speaker: "Jensen Huang",
-        text: "*looks up from your papers* You know, I've been in this industry for thirty years. I've seen thousands of research papers. But this... *gestures to your work* This feels different. Like you're not just solving a problem - you're building the future. The way you think about optimization... it's not just about efficiency, it's about elegance.",
+        text: "He looks up. 'Thirty years in this game, thousands of papers. But this—' he gestures—'this feels different. You’re not just solving problems, you’re building the future. Your optimization has elegance, not just efficiency.'",
         choices: null,
         nextScene: 18
     },
@@ -210,7 +210,7 @@ export const jensenHuangStory = [
         background: "outdoor",
         character: "nervous",
         speaker: "Jensen Huang",
-        text: "*hands you back your papers, now neatly organized* Look, I know this is unusual. We just met - literally collided - at an airport. But I have to ask... *checks his watch* are you free this afternoon? I want to show you something. Something that could change how you think about your research.",
+        text: "He hands your now‑organized stack back. 'I know it’s unusual—we literally collided—but are you free this afternoon?' He checks his watch. 'I want to show you something that might rewrite how you see your own work.'",
         choices: null,
         nextScene: 19
     },
@@ -219,7 +219,7 @@ export const jensenHuangStory = [
         background: "outdoor",
         character: "blush",
         speaker: "Jensen Huang",
-        text: "I want to see the rest of your work. NVIDIA headquarters, this afternoon. When it's quiet and we can really talk. I'll show you things we haven't even announced yet. *pauses* Things I think only you would truly understand. The way you approach problems... it's exactly what we need.",
+        text: "I want to see the rest of your work. NVIDIA headquarters, this afternoon. When it’s quiet and we can really talk. I’ll show you things we haven’t even announced yet—things I think only you would truly understand. The way you approach problems... it’s exactly what we need.",
         choices: null,
         nextScene: 20
     },
@@ -245,7 +245,7 @@ export const jensenHuangStory = [
         background: "outdoor",
         character: "laugh",
         speaker: "Jensen Huang",
-        text: "*smiles warmly* Perfect. I'll send a car at 5 PM. *hands you his business card with a handwritten note on the back* Text me when you're at your hotel. And... bring your research. All of it. I want to see everything. *his eyes sparkle with excitement*",
+        text: "He smiles like he just found a unicorn startup. 'Perfect. I’ll send a car at 5 PM.' He hands you a card with a handwritten note. 'Text me when you’re at the hotel. And bring everything—I want the whole repo.'",
         choices: null,
         nextScene: 28,
         transition: "That afternoon, 5 PM..."
@@ -255,7 +255,7 @@ export const jensenHuangStory = [
         background: "outdoor",
         character: "sad",
         speaker: "Jensen Huang",
-        text: "*his expression falls slightly* I understand. I know this is unusual, and I respect your decision. *pauses* But I want you to know - your research is incredible. The way you've approached neural network optimization... it's exactly what the industry needs.",
+        text: "His expression dips. 'I get it. It’s unusual, and I respect that.' He breathes out. 'But your research is incredible. Your approach to neural optimization is exactly what the industry needs.'",
         choices: null,
         nextScene: 23
     },
@@ -264,7 +264,7 @@ export const jensenHuangStory = [
         background: "outdoor",
         character: "nervous",
         speaker: "Jensen Huang",
-        text: "*tries to hide his disappointment* Look, I don't want to pressure you. But if you ever change your mind, or if you want to discuss your research in a more... professional setting, my door is always open. *hands you his business card*",
+        text: "He tries to keep it cool. 'No pressure. If you change your mind—or want a purely professional deep‑dive—my door’s open.' He hands you his card.",
         choices: null,
         nextScene: 24
     },
@@ -273,7 +273,7 @@ export const jensenHuangStory = [
         background: "outdoor",
         character: "neutral",
         speaker: "Jensen Huang",
-        text: "*his voice becomes more business-like* Your work on neural network acceleration is groundbreaking. We'd love to explore potential collaboration opportunities. *pauses* Sometimes the best partnerships start with professional respect.",
+        text: "His tone shifts to boardroom mode. 'Your neural acceleration work is groundbreaking. We’d love to explore collaboration. Sometimes the best partnerships start with mutual respect.'",
         choices: null,
         nextScene: 25
     },
@@ -310,7 +310,7 @@ export const jensenHuangStory = [
         background: "nvidiaoffice",
         character: "neutral",
         speaker: "Jensen Huang",
-        text: "*waiting at the entrance, leather jacket back on* You came. *seems almost relieved* I wasn't sure you would. Sometimes I forget how unusual these invitations sound. Come in. *his eyes light up with genuine excitement*",
+        text: "He’s by the entrance, leather jacket back on. 'You came.' Relief flashes across his face. 'I wasn’t sure you would. I forget how unusual this sounds. Come in.' His excitement feels contagious.",
         choices: null,
         nextScene: 29
     },
@@ -319,7 +319,7 @@ export const jensenHuangStory = [
         background: "nvidiaoffice",
         character: "affectionate",
         speaker: "Jensen Huang",
-        text: "*walks you through the main lobby* During the day, this place is chaos. Three thousand employees, constant meetings, deadlines. But in the afternoon... *gestures to walls lined with GPU prototypes* it's just the dreams. The pure, unfiltered vision of what's possible.",
+        text: "He guides you through the lobby. 'Daytime is chaos—three thousand people, nonstop meetings. But afternoons?' He nods at walls of GPU prototypes. 'That’s when it’s just the dreams.'",
         choices: null,
         nextScene: 30
     },
@@ -328,7 +328,7 @@ export const jensenHuangStory = [
         background: "nvidiaoffice",
         character: "neutral",
         speaker: "Jensen Huang",
-        text: "*leading you to a massive room filled with prototype hardware* This is where the magic happens. *gestures to rows of experimental GPUs* These aren't in any product roadmap. They're... possibilities. The future of computing, right here in this room.",
+        text: "He leads you into a room packed with prototypes. 'This is where the magic happens.' Rows of experimental GPUs hum quietly. 'None of this is on a roadmap. These are possibilities.'",
         choices: null,
         nextScene: 31
     },
@@ -337,7 +337,7 @@ export const jensenHuangStory = [
         background: "nvidiaoffice",
         character: "laugh",
         speaker: "Jensen Huang",
-        text: "*powering up a workstation* I want to show you something. *types rapidly* This is our next-generation architecture. It's not public yet, but... *looks at you* I think you'll understand what we're trying to achieve. The way you approach problems... it's exactly what we need.",
+        text: "He powers up a workstation. 'I want to show you something.' A rapid burst of keystrokes. 'Next‑gen architecture—not public. But I think you’ll get what we’re building. Your approach fits perfectly.'",
         choices: null,
         nextScene: 32
     },
@@ -367,7 +367,7 @@ export const jensenHuangStory = [
         background: "nvidiaoffice",
         character: "laugh",
         speaker: "Jensen Huang",
-        text: "*grins* I knew you'd understand. Most people see the numbers, the specs. But you... you see the potential. The way this could change everything. *pauses* That's why I brought you here. You're not just a researcher - you're a visionary.",
+        text: "He grins. 'I knew you’d get it. Most people see specs—you see potential. This could change everything.' He nods. 'That’s why you’re here. You’re not just a researcher—you’re a visionary.'",
         choices: null,
         nextScene: 36
     },
@@ -376,7 +376,7 @@ export const jensenHuangStory = [
         background: "nvidiaoffice",
         character: "affectionate",
         speaker: "Jensen Huang",
-        text: "*his eyes light up* Perfect questions. You're thinking like an engineer, not just a researcher. *leans in* The memory bandwidth is the key bottleneck. That's where your tensor optimization could be revolutionary. The way you've structured the neural network architecture... it's exactly what we need.",
+        text: "His eyes brighten. 'Perfect questions. You’re thinking like an engineer, not just a researcher.' He leans in. 'Bandwidth is the bottleneck—that’s where your tensor work could be revolutionary.'",
         choices: null,
         nextScene: 36
     },
@@ -385,7 +385,7 @@ export const jensenHuangStory = [
         background: "nvidiaoffice",
         character: "surprised",
         speaker: "Jensen Huang",
-        text: "*stops the demonstration* Wait. You're saying your approach could increase efficiency by how much? *pulls out a tablet* Show me. Right now. I need to see this. The way you've optimized the tensor operations... it's not just efficient, it's beautiful.",
+        text: "He pauses the demo. 'Hold on—your approach boosts efficiency by how much?' Tablet out. 'Show me. Now. Those tensor ops aren’t just efficient—they’re art.'",
         choices: null,
         nextScene: 36
     },
@@ -394,7 +394,7 @@ export const jensenHuangStory = [
         background: "nvidiaoffice",
         character: "neutral",
         speaker: "Jensen Huang",
-        text: "*leading you through more sections* This is our AI research lab. *gestures to massive server racks* We're training models that would have taken years just a decade ago. But we're still hitting limits. Your work... it could be the key. The way you've reimagined the memory hierarchy could solve bottlenecks we've been struggling with for years.",
+        text: "He guides you deeper. 'This is our AI research lab.' Rows of servers blink. 'We train models in hours that used to take years—but we still hit limits. Your memory rethink might be the key.'",
         choices: null,
         nextScene: 37
     },
@@ -403,7 +403,7 @@ export const jensenHuangStory = [
         background: "nvidiaoffice",
         character: "nervous",
         speaker: "Jensen Huang",
-        text: "*opening a door to a smaller, more intimate lab* This is my personal workspace. *gestures to a desk covered in prototypes* I come here when I need to think, to experiment. I've never brought anyone here before. *his voice softens* But with you... I feel like I'm talking to someone who truly understands what we're trying to build.",
+        text: "He opens a smaller lab. 'My personal workspace.' Prototypes cover the desk. 'I come here to think. I’ve never brought anyone here.' His voice softens. 'With you, it feels understood.'",
         choices: null,
         nextScene: 38
     },
@@ -412,7 +412,7 @@ export const jensenHuangStory = [
         background: "nvidiaoffice",
         character: "neutral",
         speaker: "Jensen Huang",
-        text: "*sits down at a workstation* You know, I've been in this industry for thirty years. I've seen technologies come and go. But what you're working on... *looks at you intently* This could be the breakthrough that defines the next decade. The way you approach problems... it's not just about making things faster, it's about making the impossible possible.",
+        text: "He settles at a workstation. 'Thirty years in—tech comes and goes. But what you’re building?' He meets your eyes. 'This could define the next decade. You don’t just chase speed—you make the impossible practical.'",
         choices: null,
         nextScene: 39
     },
@@ -421,7 +421,7 @@ export const jensenHuangStory = [
         background: "nvidiaoffice",
         character: "nervous",
         speaker: "Jensen Huang",
-        text: "*his voice softens* I don't usually do this. Bring people here, show them unreleased technology. But with you... *pauses* I feel like I'm talking to someone who truly understands what we're trying to build. The way you think about optimization... it's not just about efficiency, it's about elegance.",
+        text: "His voice softens. 'I don’t usually do this—unreleased tech, private labs. But with you, it feels like talking to someone who actually gets the build. Your optimization has elegance, not just speed.'",
         choices: null,
         nextScene: 40
     },
@@ -430,7 +430,7 @@ export const jensenHuangStory = [
         background: "nvidiaoffice",
         character: "blush",
         speaker: "Jensen Huang",
-        text: "*takes a deep breath* I've been looking for someone like you for a long time. Not just brilliant - there are plenty of brilliant people. But someone who sees the bigger picture, who understands that technology is about changing the world, not just making money. *reaches across the table* I want to show you something. Something that could change how you think about your research.",
+        text: "He exhales. 'I’ve been looking for someone like you for a long time. Not just brilliant—plenty of those—but big‑picture. Tech that changes the world, not just the quarterly.' He leans forward. 'I want to show you something that might reframe your research.'",
         choices: null,
         nextScene: 41
     },
@@ -439,7 +439,7 @@ export const jensenHuangStory = [
         background: "nvidiaoffice",
         character: "affectionate",
         speaker: "Jensen Huang",
-        text: "*his eyes meet yours* I know this is unprofessional. I know we just met. But I can't stop thinking about what we could build together. Not just as colleagues, but as... *pauses* as something more. The way you approach problems... it's exactly what we need. I want to show you things we haven't even announced yet. Things I think only you would truly understand.",
+        text: "He meets your eyes. 'I know this is unorthodox. We just met. But I can’t stop thinking about what we could build—maybe more than colleagues.' He smiles. 'I want to show you things we haven’t even announced—stuff only you’d truly get.'",
         choices: [
             {
                 text: "Express mutual feelings",
@@ -460,7 +460,7 @@ export const jensenHuangStory = [
         background: "nvidiaoffice",
         character: "laugh",
         speaker: "Jensen Huang",
-        text: "*his eyes light up with pure joy* You feel it too? *reaches for your hand* I was so worried you'd think this was inappropriate. But this connection... it's real, isn't it? What we have... it's real. The way you think about problems... it's exactly what we need.",
+        text: "His face lights up. 'You feel it too?' He reaches for your hand without overthinking it. 'I worried it was too much. But this connection—it's real, right?'",
         choices: null,
         nextScene: 45
     },
@@ -469,7 +469,7 @@ export const jensenHuangStory = [
         background: "nvidiaoffice",
         character: "nervous",
         speaker: "Jensen Huang",
-        text: "*nods understandingly* You're absolutely right. We should be careful. But I want you to know - I'm serious about this. About you. I'll wait as long as it takes. The way you approach problems... it's exactly what we need. I want to show you things we haven't even announced yet.",
+        text: "He nods. 'You’re right—we should be careful. But I’m serious about this. About you. I can take the slow path.'",
         choices: null,
         nextScene: 45
     },
@@ -478,9 +478,9 @@ export const jensenHuangStory = [
         background: "nvidiaoffice",
         character: "sad",
         speaker: "Jensen Huang",
-        text: "*tries to hide his disappointment* Of course. You're absolutely right. We should keep this professional. I respect that decision completely. Let's focus on building something amazing together in the business world. The way you approach problems... it's exactly what we need.",
+        text: "He masks the disappointment. 'Of course. Professional it is. I respect that. Let’s still build something amazing together.'",
         choices: null,
-        nextScene: 45
+        nextScene: "ending_jensen_professional"
     },
     // Scene 45: The evening continues
     {
@@ -496,7 +496,7 @@ export const jensenHuangStory = [
         background: "nvidiaoffice",
         character: "laugh",
         speaker: "Jensen Huang",
-        text: "*checking his watch* You know, I have an idea. The GTC Conference is tomorrow, and I think the world needs to hear about your research. *grins* What do you say we get you on stage? I want you to present your work to the entire AI community. The way you approach problems... it's exactly what we need.",
+        text: "He checks his watch. 'Idea: you’re on stage tomorrow. The world should hear this.' A half‑grin. 'Let’s put your research in front of the entire AI crowd.'",
         choices: null,
         nextScene: 47
     },
@@ -505,7 +505,7 @@ export const jensenHuangStory = [
         background: "nvidiaoffice",
         character: "affectionate",
         speaker: "Jensen Huang",
-        text: "*his eyes light up* I want you to speak at GTC. Not just present your research, but share your vision for the future of AI. *pauses* I think you're ready to change the world. The way you've structured your neural network optimization... it's exactly what the industry needs to hear.",
+        text: "His eyes brighten. 'I want you to speak at GTC—not just the research, your vision. You’re ready to move the room.'",
         choices: [
             {
                 text: "Accept enthusiastically",
@@ -526,7 +526,7 @@ export const jensenHuangStory = [
         background: "nvidiaoffice",
         character: "laugh",
         speaker: "Jensen Huang",
-        text: "*grins* Perfect! I knew you'd be excited. This is going to be incredible. *reaches for your hand* Together, we're going to show the world what's possible. The way you approach problems... it's exactly what we need.",
+        text: "He grins. 'Knew you’d say yes. This is going to be incredible.' He squeezes your hand. 'Let’s show the world what’s possible.'",
         choices: null,
         nextScene: 51
     },
@@ -535,7 +535,7 @@ export const jensenHuangStory = [
         background: "nvidiaoffice",
         character: "affectionate",
         speaker: "Jensen Huang",
-        text: "*places a reassuring hand on your shoulder* I understand the nerves. But trust me - you're ready for this. Your research is groundbreaking, and you have the passion to inspire others. *smiles* I'll be right there with you. The way you approach problems... it's exactly what we need.",
+        text: "He rests a reassuring hand on your shoulder. 'Nerves are normal. You’re ready. The work is groundbreaking—and you sell it with heart. I’ll be right there with you.'",
         choices: null,
         nextScene: 51
     },
@@ -544,7 +544,7 @@ export const jensenHuangStory = [
         background: "nvidiaoffice",
         character: "neutral",
         speaker: "Jensen Huang",
-        text: "*his eyes light up* Great question. You'll be speaking to the brightest minds in AI - researchers, engineers, visionaries from around the world. *pauses* They're hungry for innovation, for someone who can show them the future. That's you. The way you approach problems... it's exactly what we need.",
+        text: "He nods. 'Great question. Audience is the best of AI—researchers, engineers, visionaries. They’re hungry for someone to point at the future. That’s you.'",
         choices: null,
         nextScene: 51
     },
@@ -553,7 +553,7 @@ export const jensenHuangStory = [
         background: "nvidiaoffice",
         character: "neutral",
         speaker: "Jensen Huang",
-        text: "*leading you to a conference room* Let's prepare your presentation. I want to make sure you have everything you need. *gestures to a massive screen* This is where we'll rehearse. The way you approach problems... it's exactly what we need.",
+        text: "He leads you into a conference room. 'Let’s prep your talk—I want you fully loaded.' He gestures at a wall‑sized screen. 'Rehearsal happens here.'",
         choices: null,
         nextScene: 52
     },
@@ -562,7 +562,7 @@ export const jensenHuangStory = [
         background: "nvidiaoffice",
         character: "affectionate",
         speaker: "Jensen Huang",
-        text: "*watching you present* That was incredible. You have a natural gift for explaining complex concepts. *pauses* I can see why your research is so groundbreaking. The way you've structured the neural network architecture... it's exactly what we need.",
+        text: "He watches you present, impressed. 'That was incredible. You’re a natural at translating the complex. No wonder the research hits so hard.'",
         choices: null,
         nextScene: 53
     },
@@ -571,7 +571,7 @@ export const jensenHuangStory = [
         background: "nvidiaoffice",
         character: "nervous",
         speaker: "Jensen Huang",
-        text: "*checking his watch* It's getting late. You should get some rest. Tomorrow is going to be a big day. *pauses* I'm so proud of you. The way you approach problems... it's exactly what we need.",
+        text: "He checks the time. 'It’s late. Get some rest—tomorrow’s huge.' He smiles. 'I’m proud of you.'",
         choices: null,
         nextScene: 54,
         transition: "Tomorrow morning..."
@@ -693,7 +693,7 @@ export const jensenHuangStory = [
         background: "nvidiaconference",
         character: "laugh",
         speaker: "Jensen Huang",
-        text: "*approaching through the crowd* That was incredible. I've been watching from the back, and I have to say - your presentation was the most impressive thing I've seen at this conference. The way you explained the optimization techniques... it was brilliant.",
+        text: "He threads through the crowd. 'That was incredible. I watched from the back—easily the standout talk. The way you explained those optimizations was chef’s kiss.'",
         choices: null,
         nextScene: 66
     },
@@ -702,7 +702,7 @@ export const jensenHuangStory = [
         background: "nvidiaconference",
         character: "affectionate",
         speaker: "Jensen Huang",
-        text: "*leaning in closer* You know, I've been thinking about your work all day. The way you've structured the neural network architecture... it's not just about making things faster, it's about making the impossible possible. I want to show you something. Something that could change how you think about your research.",
+        text: "He leans in. 'I’ve been thinking about your work all day. Your architecture doesn’t just go faster—it makes the impossible feel shippable. I want to show you something that might reframe it.'",
         choices: null,
         nextScene: 67
     },
@@ -711,7 +711,7 @@ export const jensenHuangStory = [
         background: "nvidiaconference",
         character: "blush",
         speaker: "Jensen Huang",
-        text: "*his voice drops to a whisper* NVIDIA headquarters, tonight. After hours when it's quiet and we can really talk. I'll show you things we haven't even announced yet. *pauses* Things I think only you would truly understand. The way you approach problems... it's exactly what we need.",
+        text: "He lowers his voice. ' Dennys, tonight. After hours, when it's quiet. I'll show you things we haven't announced—stuff only you'll really get.'",
         choices: null,
         nextScene: 68
     },
@@ -737,105 +737,162 @@ export const jensenHuangStory = [
         background: "nvidiaconference",
         character: "laugh",
         speaker: "Jensen Huang",
-        text: "*smiles warmly* Perfect. I'll send a car at 10 PM. *hands you his business card with a handwritten note on the back* Text me when you're at your hotel. And... bring your research. All of it. I want to see everything. *his eyes sparkle with excitement*",
+        text: "He smiles. 'Perfect. I'll send a car at 10 PM.' He hands you a card with a handwritten note. 'Text me when you're back. And bring everything—I want to see it all.'",
         choices: null,
         nextScene: 71,
-        transition: "That night, 10 PM..."
+        transition: "Later that night"
     },
     // Scene 70: Politely declined
     {
         background: "nvidiaconference",
         character: "sad",
         speaker: "Jensen Huang",
-        text: "*his expression falls slightly* I understand. I know this is unusual, and I respect your decision. *pauses* But I want you to know - your research is incredible. The way you've approached neural network optimization... it's exactly what the industry needs.",
+        text: "His expression dips. 'I get it. It’s unusual, and I respect your call.' He softens. 'But your research is incredible. The industry needs this.'",
         choices: null,
-        nextScene: 72
+        nextScene: "ending_jensen_professional"
     },
     // Scene 71: The evening continues
     {
-        background: "nvidiaconference",
+        background: "dennys",
         character: "neutral",
         speaker: "Narrator",
         text: "The night continues with more technical discussions and demonstrations. Jensen shows you prototypes that won't be released for years, shares insights about the future of AI, and the connection between you grows stronger with each passing hour. The building feels alive with possibility.",
         choices: null,
+        nextScene: 72
+    },
+    // Scene 72: Intimate conversation begins
+    {
+        background: "dennys",
+        character: "affectionate",
+        speaker: "Jensen Huang",
+        text: "He leans closer across the table, his voice dropping to a whisper. 'You know, I've never shown anyone these prototypes before. There's something about you... the way you see the potential in everything. It's like you understand the vision before I even explain it.'",
+        choices: null,
         nextScene: 73
     },
-    // Scene 72: The professional offer
+    // Scene 73: Personal sharing
     {
-        background: "nvidiaconference",
-        character: "neutral",
-        speaker: "Jensen Huang",
-        text: "*his voice becomes more business-like* Your work on neural network acceleration is groundbreaking. We'd love to explore potential collaboration opportunities. *pauses* Sometimes the best partnerships start with professional respect.",
-        choices: null,
-        nextScene: 74
-    },
-    // Scene 73: Final choice
-    {
-        background: "nvidiaconference",
+        background: "dennys",
         character: "nervous",
-        speaker: "Narrator",
-        text: "Jensen Huang has just bared his soul to you in the intimate setting of NVIDIA headquarters. This moment will define your future together. How do you respond?",
+        speaker: "Jensen Huang",
+        text: "He takes a deep breath, looking vulnerable for the first time. 'I've been building this company for thirty years, but sometimes I wonder... am I just chasing the next breakthrough, or am I actually building something that matters? With you here, I feel like I'm finally talking to someone who gets it.'",
         choices: [
             {
-                text: "Kiss him passionately",
+                text: "Share your own doubts and dreams",
+                nextScene: 74
+            },
+            {
+                text: "Reassure him about his impact",
                 nextScene: 75
             },
             {
-                text: "Tell him you feel the same way",
+                text: "Ask about his personal life",
                 nextScene: 76
-            },
-            {
-                text: "Suggest focusing on the business partnership",
-                nextScene: 77
-            },
-            {
-                text: "Say you need time to think",
-                nextScene: 78
             }
         ]
     },
-    // Scene 74: The ending
+    // Scene 74: Mutual vulnerability
     {
-        background: "nvidiaconference",
+        background: "dennys",
+        character: "affectionate",
+        speaker: "Jensen Huang",
+        text: "His eyes light up as you share your own struggles. 'You feel it too? The weight of trying to change the world while wondering if you're just fooling yourself?' He reaches across the table, his hand finding yours. 'I've never met anyone who understands this pressure.'",
+        choices: null,
+        nextScene: 77
+    },
+    // Scene 75: Reassurance
+    {
+        background: "dennys",
+        character: "laugh",
+        speaker: "Jensen Huang",
+        text: "He smiles warmly, his confidence returning. 'You really think so? Sometimes I forget that what we're building here actually matters to people. Your research, your passion... it reminds me why I started this journey in the first place.'",
+        choices: null,
+        nextScene: 77
+    },
+    // Scene 76: Personal connection
+    {
+        background: "dennys",
+        character: "blush",
+        speaker: "Jensen Huang",
+        text: "He looks surprised, then thoughtful. 'Personal life? That's... not something I usually talk about. But with you...' He pauses, studying your face. 'I feel like I can be more than just the CEO. I can be Jensen.'",
+        choices: null,
+        nextScene: 77
+    },
+    // Scene 77: The moment of truth
+    {
+        background: "dennys",
+        character: "affectionate",
+        speaker: "Jensen Huang",
+        text: "The conversation has grown deeper, more personal. Jensen's guard is completely down now. He looks at you with an intensity that makes your heart race. 'I know this is crazy, and I know we just met, but... I can't stop thinking about what we could build together. Not just as colleagues, but as... something more.'",
+        choices: null,
+        nextScene: 78
+    },
+    // Scene 78: Final choice
+    {
+        background: "dennys",
+        character: "nervous",
+        speaker: "Narrator",
+        text: "Jensen Huang has just bared his soul to you in the intimate setting of Denny's. This moment will define your future together. How do you respond?",
+        choices: [
+            {
+                text: "Kiss him passionately",
+                nextScene: 79
+            },
+            {
+                text: "Tell him you feel the same way",
+                nextScene: 80
+            },
+            {
+                text: "Suggest focusing on the business partnership",
+                nextScene: 81
+            },
+            {
+                text: "Say you need time to think",
+                nextScene: 82
+            }
+        ]
+    },
+    // Scene 79: The ending
+    {
+        background: "dennys",
         character: "neutral",
         speaker: "Narrator",
         text: "The conference continues, but your path with Jensen Huang takes a different direction. While the romantic connection wasn't meant to be, your professional relationship with NVIDIA opens doors you never imagined. Your research becomes the foundation for future AI breakthroughs, and you learn that sometimes the most meaningful relationships are built on mutual respect and shared vision rather than romance.",
         choices: null,
         nextScene: 'ending_jensen_professional'
     },
-    // Scene 75: Passionate path
+    // Scene 80: Passionate path
     {
-        background: "nvidiaconference",
+        background: "dennys",
         character: "laugh",
         speaker: "Narrator",
         text: "You lean across the table and kiss him. The office fades away as you both get lost in the moment. Jensen responds with equal passion, and you both realize this is the beginning of something extraordinary. The way you approach problems... it's exactly what we need.",
         choices: null,
         nextScene: 'ending_jensen_passionate'
     },
-    // Scene 76: Mutual confession
+    // Scene 81: Mutual confession
     {
-        background: "nvidiaconference",
+        background: "dennys",
         character: "affectionate",
         speaker: "Jensen Huang",
-        text: "*takes your hands* You do? *laughs with relief* I was so worried you'd think this was inappropriate. But this connection... it's real, isn't it? What we have... it's real. The way you approach problems... it's exactly what we need.",
+        text: "He takes your hands, relieved laugh escaping. 'You do? I worried it’d feel inappropriate. But this—us—it’s real, right?'",
         choices: null,
         nextScene: 'ending_jensen_romance'
     },
-    // Scene 77: Professional focus
+    // Scene 82: Professional focus
     {
-        background: "nvidiaconference",
+        background: "dennys",
         character: "sad",
         speaker: "Jensen Huang",
-        text: "*nods understandingly* You're absolutely right. We should keep this professional. I respect that decision completely. Let's focus on building something amazing together in the business world. The way you approach problems... it's exactly what we need.",
+        text: "He nods. 'You’re right. Let’s keep it professional. I respect it—and I still want to build something amazing together.'",
         choices: null,
         nextScene: 'ending_jensen_professional'
     },
-    // Scene 78: Need time
+    // Scene 83: Need time
     {
-        background: "nvidiaconference",
+        background: "dennys",
         character: "nervous",
         speaker: "Jensen Huang",
-        text: "*nods* Of course. This is a lot to process. I don't want to rush you into anything. Take all the time you need. I'll be here when you're ready. The way you approach problems... it's exactly what we need.",
+        text: "He nods. 'Totally fair. No rush. Take the time you need—I’ll be here when you’re ready.'",
         choices: null,
                 nextScene: 'ending_jensen_slow_burn'
     }
