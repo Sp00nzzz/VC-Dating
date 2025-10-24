@@ -309,7 +309,7 @@ export const markZuckerbergStory = [
         background: "facebook",
         character: "neutral",
         speaker: "Narrator",
-        text: "As you drive through the streets of Menlo Park and onto the highway, Mark begins to open up about Facebook's early days. The formal CEO persona has given way to something more personal, more genuine.",
+        text: "As you take the elavator to the ground floor, Mark begins to open up about Facebook's early days. The formal CEO persona has given way to something more personal, more genuine.",
         choices: null,
         nextScene: 26
     },
@@ -368,15 +368,7 @@ export const markZuckerbergStory = [
         speaker: "Mark Zuckerberg",
         text: "But you know what? Despite all the growth, all the challenges, I still think about those early days at Harvard. The late nights coding in my dorm room, the excitement of seeing people actually use what we built. There was something pure about it then - just trying to solve a simple problem of connecting people. Sometimes I miss that simplicity.",
         choices: null,
-        nextScene: 31
-    },
-    // Scene 30.5: Transition
-    {
-        background: "facebook",
-        character: null,
-        speaker: "Narrator",
-        text: "A few minutes later...",
-        choices: null,
+        transition: "A few minutes later...",
         nextScene: 31
     },
     // Scene 31: Harvard memories
@@ -709,6 +701,7 @@ export const markZuckerbergStory = [
         speaker: "Mark Zuckerberg",
         text: "Let's go. I have a private screening set up. It'll be interesting to watch it with someone who understands both the technical and human side of what we do.",
         choices: null,
+        transition: "20 minutes later...",
         nextScene: 61
     },
     

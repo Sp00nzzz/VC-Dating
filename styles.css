@@ -600,12 +600,30 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.95);
+    background: url('CharacterSelectScreen/TitleScreen 1.png') center center / cover no-repeat;
     display: none;
     align-items: center;
     justify-content: center;
     z-index: 10;
     animation: fadeIn 0.5s ease;
+    overflow: hidden;
+}
+
+.ending-screen::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    pointer-events: none;
+}
+
+.ending-screen::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
 }
 
 .ending-screen.active {
@@ -613,90 +631,490 @@ body {
 }
 
 .ending-content {
-    text-align: center;
-    color: white;
-    max-width: 800px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
-    max-height: 95vh;
-    overflow-y: auto;
+    z-index: 2;
+}
+
+.ending-layout {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.ending-character-card {
+    position: relative;
+    width: min(18vw, 250px);
+    max-width: 250px;
+    min-width: 180px;
+    height: auto;
+    overflow: visible;
+    background: white;
+    border-radius: 0;
+    box-shadow: 12px 12px 0 0 #175592;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.ending-character-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+}
+
+.ending-character-nametag {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+}
+
+.ending-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 700px;
+}
+
+.ending-title-banner {
+    background: #7cd446;
+    border: 3px solid #499b14;
+    border-radius: 15px;
+    padding: 20px 30px;
+    text-align: center;
+    box-shadow: 0px 15px 10px -5px inset rgba(255, 255, 255, 0.5);
+    position: relative;
 }
 
 .ending-title {
-    font-size: 48px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 32px;
     font-weight: bold;
-    margin-bottom: 15px;
-    color: #ffd700;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    color: white;
+    letter-spacing: -0.5px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.ending-description-box {
+    background: rgba(255, 255, 255, 0.3);
+    border: 3px solid white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 15px 10px -5px inset rgba(255, 255, 255, 0.5);
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .ending-description {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 25px;
-    color: white;
-}
-
-.ending-image {
-    max-width: 300px;
-    max-height: 300px;
-    margin: 15px auto;
-    border: 4px solid #ffd700;
-    border-radius: 10px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
-}
-
-.restart-button {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    border: 3px solid #fff;
-    padding: 12px 40px;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.restart-button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
-}
-
-.restart-button:active {
-    transform: scale(1.05);
-}
-
-.menu-button {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-    color: white;
-    border: 3px solid #fff;
-    padding: 12px 40px;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     font-family: 'Nunito', sans-serif;
-    letter-spacing: 2px;
-    z-index: 10;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: -0.3px;
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    line-height: 1.4;
 }
 
-.menu-button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+.ending-chapter-select {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 1002;
 }
 
-.menu-button:active {
+.ending-chapter-select .selection-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 75px;
+    width: 330px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.ending-chapter-select .selection-label:hover {
     transform: scale(1.05);
+}
+
+.ending-chapter-select .label-banner {
+    position: absolute;
+    left: 33px;
+    top: 20px;
+    width: 260px;
+    height: 42px;
+    z-index: 0;
+}
+
+.ending-chapter-select .label-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 75px;
+    height: 75px;
+    z-index: 2;
+}
+
+.ending-chapter-select .selection-label span {
+    position: absolute;
+    left: 95px;
+    top: 27px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: white;
+    letter-spacing: -0.85px;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+/* Responsive design for ending screen */
+@media (max-width: 1200px) {
+    .ending-layout {
+        max-width: 1200px;
+        gap: 30px;
+        padding: 15px;
+    }
+    
+    .ending-character-card {
+        width: min(22vw, 220px);
+    }
+    
+    .ending-title {
+        font-size: 28px;
+    }
+    
+    .ending-description {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .ending-layout {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+        max-width: 700px;
+    }
+    
+    .ending-character-card {
+        width: min(25vw, 250px);
+    }
+    
+    .ending-title {
+        font-size: 26px;
+    }
+    
+    .ending-description {
+        font-size: 18px;
+    }
+    
+    .ending-description-box {
+        min-height: 200px;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ending-layout {
+        padding: 15px;
+        gap: 25px;
+        max-width: 500px;
+    }
+    
+    .ending-character-card {
+        width: min(60vw, 300px);
+    }
+    
+    .ending-title {
+        font-size: 22px;
+    }
+    
+    .ending-description {
+        font-size: 16px;
+    }
+    
+    .ending-description-box {
+        min-height: 150px;
+        padding: 20px;
+    }
+}
+
+/* Mobile Not Available Screen */
+.mobile-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-screen.hidden {
+    display: none;
+}
+
+.mobile-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 375px;
+    max-height: 812px;
+    background: white;
+    overflow: hidden;
+}
+
+.mobile-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('CharacterSelectScreen/TitleScreen 1.png') center center / cover no-repeat;
+    z-index: 1;
+}
+
+.mobile-blur-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(9.248px);
+    -webkit-backdrop-filter: blur(9.248px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.mobile-logo {
+    position: absolute;
+    top: 114px;
+    left: 0;
+    width: 100%;
+    height: 214px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.mobile-message {
+    position: absolute;
+    top: 365px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px;
+    height: 123px;
+    z-index: 3;
+}
+
+.mobile-message-box {
+    width: 100%;
+    height: 100%;
+    background: #eb69a9;
+    border: 3.965px solid #eb69a9;
+    border-radius: 23.787px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 29.734px 22.201px -9.911px inset rgba(255, 255, 255, 0.5);
+}
+
+.mobile-message-text {
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    letter-spacing: -1px;
+    margin: 0;
+    width: 257px;
+    line-height: 1.2;
+}
+
+.mobile-character {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 355px;
+    height: 532px;
+    z-index: 2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.mobile-character img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom center;
+}
+
+/* Settings Popup */
+.settings-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.settings-popup.hidden {
+    display: none;
+}
+
+.settings-content {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    min-width: 300px;
+    max-width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.settings-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.volume-control {
+    margin-bottom: 25px;
+}
+
+.volume-label {
+    display: block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.volume-slider {
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: #ddd;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+    margin-bottom: 10px;
+}
+
+.volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ff69b4;
+    cursor: pointer;
+    border: 3px solid white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.volume-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ff69b4;
+    cursor: pointer;
+    border: 3px solid white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.volume-value {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff69b4;
+    display: inline-block;
+    background: rgba(255, 105, 180, 0.1);
+    padding: 5px 12px;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 105, 180, 0.3);
+}
+
+.settings-close {
+    background: #f87fab;
+    border: 3px solid #eb69a9;
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: -1.2px;
+    box-shadow: 0px 18px 14px -7px rgba(255, 255, 255, 0.5) inset;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.settings-close:hover {
+    background: #ff8fb9;
+    transform: translateY(-3px);
+    box-shadow: 0px 35px 25px -10px rgba(255, 255, 255, 0.6) inset, 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.settings-close:active {
+    transform: translateY(0px);
 }
 
 /* Gameplay Chapter Select Button */

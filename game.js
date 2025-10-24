@@ -46,12 +46,15 @@ let dialogueBox, characterName, dialogueText, continueIndicator;
 let choiceContainer, characterSprite, background, characterContainer;
 let secondCharacterContainer, secondCharacterSprite;
 let thirdCharacterContainer, thirdCharacterSprite;
-let titleScreen, startButton, endingScreen, restartButton, menuButton;
+let titleScreen, startButton, endingScreen, endingChapterSelect;
 let characterSelectionScreen, characterCards, chapterSelectButton, gameplayChapterSelect;
 let bgMusic, titleMusic, sparkleSound, markCubanSound, jensenHuangSound, markZuckerbergSound;
 let transitionScreen, transitionText;
 let splashScreen;
 let enableMusicListener = null; // Store reference to the listener
+let settingsPopup, settingsButton, volumeSlider, volumeValue, settingsClose;
+let globalVolume = 0.5; // Default volume (50%)
+let mobileScreen;
 
 // Test image loading for debugging
 function testImageLoading() {
@@ -89,9 +92,14 @@ function init() {
     titleScreen = document.getElementById('titleScreen');
     startButton = document.getElementById('startButton');
     endingScreen = document.getElementById('endingScreen');
-    restartButton = document.getElementById('restartButton');
-    menuButton = document.getElementById('menuButton');
+    endingChapterSelect = document.getElementById('endingChapterSelect');
     characterSelectionScreen = document.getElementById('characterSelectionScreen');
+    settingsPopup = document.getElementById('settingsPopup');
+    settingsButton = document.querySelector('.settings-btn');
+    volumeSlider = document.getElementById('volumeSlider');
+    volumeValue = document.getElementById('volumeValue');
+    settingsClose = document.getElementById('settingsClose');
+    mobileScreen = document.getElementById('mobileScreen');
     characterCards = document.querySelectorAll('.selection-card');
     chapterSelectButton = document.querySelector('#characterSelectionScreen .selection-label');
     gameplayChapterSelect = document.getElementById('gameplayChapterSelect');
@@ -108,9 +116,13 @@ function init() {
     // Event listeners
     splashScreen.addEventListener('click', hideSplashScreen);
     startButton.addEventListener('click', showCharacterSelection);
-    restartButton.addEventListener('click', restartGame);
-    menuButton.addEventListener('click', returnToMenu);
+    endingChapterSelect.addEventListener('click', returnToMenu);
     dialogueBox.addEventListener('click', advanceDialogue);
+    
+    // Settings event listeners
+    settingsButton.addEventListener('click', showSettings);
+    settingsClose.addEventListener('click', hideSettings);
+    volumeSlider.addEventListener('input', updateVolume);
     
     // Character selection listeners
     characterCards.forEach(card => {
@@ -189,7 +201,7 @@ function init() {
 // Hide splash screen and show title screen
 function hideSplashScreen() {
     // Start title music with user interaction
-    titleMusic.volume = 0.1;
+    titleMusic.volume = globalVolume;
     titleMusic.play().catch(e => console.log("Title music error:", e));
     
     // Preload title screen background
@@ -430,7 +442,7 @@ function selectCharacter(character) {
         if (bgMusic) {
             bgMusic.pause();
             bgMusic.currentTime = 0;
-            bgMusic.volume = 0.1;
+            bgMusic.volume = globalVolume;
             bgMusic.play().catch(error => {
                 console.log('Audio autoplay prevented:', error);
             });
@@ -741,6 +753,11 @@ function loadScene(sceneIndex) {
 function advanceDialogue() {
     const scene = story[gameState.currentScene];
     
+    if (!scene) {
+        console.error('Scene not found at index:', gameState.currentScene);
+        return;
+    }
+    
     if (!scene.choices) {
         // Check if scene has a transition
         if (scene.transition && scene.nextScene !== undefined) {
@@ -794,7 +811,21 @@ function showEnding(endingKey) {
     // Update ending screen
     document.getElementById('endingTitle').textContent = ending.title;
     document.getElementById('endingDescription').textContent = ending.description;
-    document.getElementById('endingImage').src = ending.image;
+    
+    // Set character image and name tag based on current character
+    const characterImage = document.getElementById('endingCharacterImage');
+    const characterNametag = document.getElementById('endingCharacterNametag');
+    
+    if (gameState.selectedCharacter === 'jensen') {
+        characterImage.src = '/CharacterSelectScreen/JensenSelect.png';
+        characterNametag.src = '/CharacterSelectScreen/JensenHuangNameTag.png';
+    } else if (gameState.selectedCharacter === 'cuban') {
+        characterImage.src = '/CharacterSelectScreen/MarkCubanSelect.png';
+        characterNametag.src = '/CharacterSelectScreen/MarkCubanNameTag.png';
+    } else if (gameState.selectedCharacter === 'zuckerberg') {
+        characterImage.src = '/CharacterSelectScreen/MarkZuckSelect.png';
+        characterNametag.src = '/CharacterSelectScreen/MarkZuckNameTag.png';
+    }
     
     // Update background
     background.className = 'background ' + ending.background;
@@ -849,8 +880,60 @@ function autoStartFromRoute() {
     }
 }
 
+// Settings functions
+function showSettings() {
+    settingsPopup.classList.remove('hidden');
+    // Set current volume on slider
+    volumeSlider.value = globalVolume * 100;
+    volumeValue.textContent = Math.round(globalVolume * 100) + '%';
+}
+
+function hideSettings() {
+    settingsPopup.classList.add('hidden');
+}
+
+function updateVolume() {
+    globalVolume = volumeSlider.value / 100;
+    volumeValue.textContent = Math.round(globalVolume * 100) + '%';
+    
+    // Apply volume to all audio elements
+    if (bgMusic) bgMusic.volume = globalVolume;
+    if (titleMusic) titleMusic.volume = globalVolume;
+    if (sparkleSound) sparkleSound.volume = globalVolume;
+    if (markCubanSound) markCubanSound.volume = globalVolume;
+    if (jensenHuangSound) jensenHuangSound.volume = globalVolume;
+    if (markZuckerbergSound) markZuckerbergSound.volume = globalVolume;
+}
+
+// Mobile detection function
+function isMobileDevice() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || 
+           window.innerWidth <= 768;
+}
+
+// Show mobile screen if on mobile device
+function checkMobileDevice() {
+    if (isMobileDevice()) {
+        // Hide all other screens
+        splashScreen.style.display = 'none';
+        titleScreen.classList.add('hidden');
+        characterSelectionScreen.classList.add('hidden');
+        endingScreen.classList.remove('active');
+        
+        // Show mobile screen
+        mobileScreen.classList.remove('hidden');
+        return true;
+    }
+    return false;
+}
+
 // Initialize when page loads
 window.addEventListener('DOMContentLoaded', () => {
+    // Check for mobile device first
+    if (checkMobileDevice()) {
+        return; // Stop initialization if on mobile
+    }
+    
     init();
     
     // Check if we should auto-start from URL
