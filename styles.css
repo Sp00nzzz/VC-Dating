@@ -892,13 +892,12 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
-    max-width: 375px;
-    max-height: 812px;
     background: white;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
 }
 
@@ -925,72 +924,118 @@ body {
 
 .mobile-logo {
     position: relative;
-    width: 100%;
-    height: 200px;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 90%;
+    max-width: 300px;
+    height: auto;
     margin-bottom: 20px;
+    z-index: 2;
 }
 
 .mobile-logo img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: contain;
-    object-position: center;
 }
 
 .mobile-message {
     position: relative;
-    width: 100%;
-    height: 120px;
-    z-index: 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 90%;
+    max-width: 300px;
     margin-bottom: 20px;
+    z-index: 2;
 }
 
 .mobile-message-box {
-    width: 100%;
-    height: 100%;
     background: #eb69a9;
     border: 3.965px solid #eb69a9;
     border-radius: 23.787px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 20px 30px;
+    text-align: center;
     box-shadow: 0px 29.734px 22.201px -9.911px inset rgba(255, 255, 255, 0.5);
 }
 
 .mobile-message-text {
     font-family: 'Nunito', sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
     color: white;
     text-align: center;
     letter-spacing: -1px;
     margin: 0;
     line-height: 1.2;
-    padding: 0 20px;
 }
 
 .mobile-character {
     position: relative;
-    width: 100%;
-    height: 300px;
+    width: 90%;
+    max-width: 320px;
+    height: auto;
     z-index: 2;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
 }
 
 .mobile-character img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: contain;
     object-position: bottom center;
+}
+
+/* Responsive adjustments for different phone sizes */
+@media (max-width: 320px) {
+    .mobile-logo {
+        width: 95%;
+        max-width: 280px;
+    }
+    
+    .mobile-message {
+        width: 95%;
+        max-width: 280px;
+    }
+    
+    .mobile-character {
+        width: 95%;
+        max-width: 300px;
+    }
+    
+    .mobile-message-text {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 414px) {
+    .mobile-logo {
+        max-width: 350px;
+    }
+    
+    .mobile-message {
+        max-width: 350px;
+    }
+    
+    .mobile-character {
+        max-width: 380px;
+    }
+    
+    .mobile-message-text {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 768px) {
+    .mobile-logo {
+        max-width: 400px;
+    }
+    
+    .mobile-message {
+        max-width: 400px;
+    }
+    
+    .mobile-character {
+        max-width: 450px;
+    }
+    
+    .mobile-message-text {
+        font-size: 24px;
+    }
 }
 
 /* Settings Popup */
