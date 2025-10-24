@@ -896,6 +896,10 @@ body {
     max-height: 812px;
     background: white;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 .mobile-background {
@@ -920,15 +924,14 @@ body {
 }
 
 .mobile-logo {
-    position: absolute;
-    top: 114px;
-    left: 0;
+    position: relative;
     width: 100%;
-    height: 214px;
+    height: 200px;
     z-index: 2;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .mobile-logo img {
@@ -939,13 +942,14 @@ body {
 }
 
 .mobile-message {
-    position: absolute;
-    top: 365px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 350px;
-    height: 123px;
+    position: relative;
+    width: 100%;
+    height: 120px;
     z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .mobile-message-box {
@@ -962,22 +966,20 @@ body {
 
 .mobile-message-text {
     font-family: 'Nunito', sans-serif;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bold;
     color: white;
     text-align: center;
     letter-spacing: -1px;
     margin: 0;
-    width: 257px;
     line-height: 1.2;
+    padding: 0 20px;
 }
 
 .mobile-character {
-    position: absolute;
-    bottom: 0;
-    left: 20px;
-    width: 355px;
-    height: 532px;
+    position: relative;
+    width: 100%;
+    height: 300px;
     z-index: 2;
     display: flex;
     align-items: flex-end;
