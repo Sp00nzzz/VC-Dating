@@ -925,7 +925,10 @@ function checkMobileDevice() {
     if (isMobileDevice()) {
         console.log('Mobile device detected, showing mobile screen');
         // Hide all other screens
-        if (splashScreen) splashScreen.style.display = 'none';
+        if (splashScreen) {
+            splashScreen.style.display = 'none';
+            splashScreen.classList.add('hidden');
+        }
         if (titleScreen) titleScreen.classList.add('hidden');
         if (characterSelectionScreen) characterSelectionScreen.classList.add('hidden');
         if (endingScreen) endingScreen.classList.remove('active');
@@ -945,7 +948,25 @@ function checkMobileDevice() {
 
 // Initialize when page loads
 window.addEventListener('DOMContentLoaded', () => {
-    // Check for mobile device first
+    // Check for mobile device first - do this immediately
+    if (isMobileDevice()) {
+        console.log('Mobile detected on DOMContentLoaded');
+        // Immediately hide splash screen
+        const splash = document.getElementById('splashScreen');
+        if (splash) {
+            splash.style.display = 'none';
+            splash.classList.add('hidden');
+        }
+        
+        // Show mobile screen
+        const mobile = document.getElementById('mobileScreen');
+        if (mobile) {
+            mobile.classList.remove('hidden');
+        }
+        return; // Stop initialization if on mobile
+    }
+    
+    // Check for mobile device again with full check
     if (checkMobileDevice()) {
         return; // Stop initialization if on mobile
     }

@@ -877,6 +877,13 @@ body {
     justify-content: center;
 }
 
+/* Hide splash screen on mobile */
+@media (max-width: 768px) {
+    .splash-screen {
+        display: none !important;
+    }
+}
+
 .mobile-screen.hidden {
     display: none;
 }
