@@ -300,7 +300,7 @@ export const markZuckerbergStory = [
         background: "facebook",
         character: "affectionate",
         speaker: "Mark Zuckerberg",
-        text: "Let's go. I have a car waiting... and I'm really looking forward to this time together. The drive to Cambridge will give us time to talk more about your work and your vision for the future of social connection. I have a feeling this is going to be... special.",
+        text: "Let's go. I have a car waiting... and I'm really looking forward to this time together. The drive to Cambridge will give us time to talk more about Facebook's journey and how it all began. I have a feeling this is going to be... special.",
         choices: null,
         nextScene: 25
     },
@@ -309,16 +309,16 @@ export const markZuckerbergStory = [
         background: "facebook",
         character: "neutral",
         speaker: "Narrator",
-        text: "As you drive through the streets of Menlo Park and onto the highway, Mark seems more relaxed, more open. The formal CEO persona has given way to something more personal, more genuine.",
+        text: "As you drive through the streets of Menlo Park and onto the highway, Mark begins to open up about Facebook's early days. The formal CEO persona has given way to something more personal, more genuine.",
         choices: null,
         nextScene: 26
     },
     // Scene 26: Conversation in the car
     {
         background: "facebook",
-        character: "blush",
+        character: "laugh",
         speaker: "Mark Zuckerberg",
-        text: "You know, I don't get many chances to just... talk. Most of my conversations are about strategy, about numbers, about the next big thing. But this feels different. Natural... and honestly, I'm finding myself drawn to you in a way that's both exciting and a little scary.",
+        text: "You know, when I first started Facebook, I had no idea it would become what it is today. It was just a simple idea - connect people at Harvard. But then it spread to other schools, then to everyone. The growth was... overwhelming at times. But the core mission never changed - bringing people together.",
         choices: [
             {
                 text: "I feel the same way",
@@ -334,39 +334,48 @@ export const markZuckerbergStory = [
             }
         ]
     },
-    // Scene 27: Mutual feeling
-    {
-        background: "facebook",
-        character: "laugh",
-        speaker: "Mark Zuckerberg",
-        text: "That's exactly what I was hoping you'd say... and it's making my heart race. There's something about talking to someone who really gets it, who understands both the technical and the human side of what we do. But more than that, there's something about you that makes me want to be completely open, completely vulnerable.",
-        choices: null,
-        nextScene: 30
-    },
-    // Scene 28: Connection difficulty
+    // Scene 27: Facebook's evolution
     {
         background: "facebook",
         character: "affectionate",
         speaker: "Mark Zuckerberg",
-        text: "It is. The higher you climb, the harder it becomes to know who's genuine and who's just... interested in what you can do for them. But with you, I don't feel that pressure. I feel like I can be myself, completely myself, and that's... incredibly refreshing and attractive.",
+        text: "The thing about Facebook is that it evolved organically. We started with just Harvard students, then expanded to other universities. But the real breakthrough was when we opened it to everyone. Suddenly, we weren't just connecting college students - we were connecting the world. It was both exhilarating and terrifying.",
         choices: null,
         nextScene: 30
     },
-    // Scene 29: Honored response
+    // Scene 28: The challenges
     {
         background: "facebook",
-        character: "flustered",
+        character: "confused",
         speaker: "Mark Zuckerberg",
-        text: "I appreciate that... and the way you say it makes me feel things I haven't felt in a long time. It's not often I meet someone I feel comfortable being completely myself around. There's something special about this conversation... and about you.",
+        text: "But with that growth came challenges I never anticipated. Privacy concerns, misinformation, the responsibility of connecting billions of people. Every decision we make affects people's lives in ways we can't always predict. It's a weight I carry every day, but it's also what makes the mission so important.",
         choices: null,
         nextScene: 30
     },
-    // Scene 30: Arrival at Harvard
+    // Scene 29: The mission
     {
         background: "facebook",
-        character: "neutral",
+        character: "laugh",
+        speaker: "Mark Zuckerberg",
+        text: "Despite all the challenges, the mission remains the same - making the world more open and connected. When I see families reconnecting across continents, friends staying in touch despite distance, communities forming around shared interests... that's when I know we're on the right path. That's what makes it all worth it.",
+        choices: null,
+        nextScene: 30
+    },
+    // Scene 30: Harvard memories
+    {
+        background: "facebook",
+        character: "affectionate",
+        speaker: "Mark Zuckerberg",
+        text: "But you know what? Despite all the growth, all the challenges, I still think about those early days at Harvard. The late nights coding in my dorm room, the excitement of seeing people actually use what we built. There was something pure about it then - just trying to solve a simple problem of connecting people. Sometimes I miss that simplicity.",
+        choices: null,
+        nextScene: 31
+    },
+    // Scene 30.5: Transition
+    {
+        background: "facebook",
+        character: null,
         speaker: "Narrator",
-        text: "As you approach Cambridge, the familiar sights of Harvard University come into view. Mark's expression changes - there's nostalgia, but also something deeper, more complex.",
+        text: "A few minutes later...",
         choices: null,
         nextScene: 31
     },
