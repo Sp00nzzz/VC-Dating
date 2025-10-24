@@ -48,7 +48,7 @@ let secondCharacterContainer, secondCharacterSprite;
 let thirdCharacterContainer, thirdCharacterSprite;
 let titleScreen, startButton, endingScreen, restartButton, menuButton;
 let characterSelectionScreen, characterCards, chapterSelectButton, gameplayChapterSelect;
-let bgMusic, titleMusic, sparkleSound, markCubanSound, jensenHuangSound;
+let bgMusic, titleMusic, sparkleSound, markCubanSound, jensenHuangSound, markZuckerbergSound;
 let transitionScreen, transitionText;
 let splashScreen;
 let enableMusicListener = null; // Store reference to the listener
@@ -82,6 +82,7 @@ function init() {
     sparkleSound = document.getElementById('sparkleSound');
     markCubanSound = document.getElementById('markCubanSound');
     jensenHuangSound = document.getElementById('jensenHuangSound');
+    markZuckerbergSound = document.getElementById('markZuckerbergSound');
     transitionScreen = document.getElementById('transitionScreen');
     transitionText = document.getElementById('transitionText');
     splashScreen = document.getElementById('splashScreen');
@@ -358,12 +359,13 @@ function selectCharacter(character) {
         }, 300);
     }
     
-    // Play Mark Zuckerberg sound if Mark Zuckerberg is selected (if audio exists)
-    if (character === 'zuckerberg' && window.markZuckerbergSound) {
+    // Play Mark Zuckerberg sound if Mark Zuckerberg is selected
+    if (character === 'zuckerberg' && markZuckerbergSound) {
+        // Play after a short delay so it plays after the sparkle sound
         setTimeout(() => {
-            window.markZuckerbergSound.currentTime = 0;
-            window.markZuckerbergSound.volume = 0.5;
-            window.markZuckerbergSound.play().catch(e => console.log("Mark Zuckerberg sound error:", e));
+            markZuckerbergSound.currentTime = 0;
+            markZuckerbergSound.volume = 0.5;
+            markZuckerbergSound.play().catch(e => console.log("Mark Zuckerberg sound error:", e));
         }, 300);
     }
     
