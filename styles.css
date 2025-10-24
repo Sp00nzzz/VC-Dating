@@ -73,6 +73,18 @@ body {
     background: url('Scenes/Denny.png') center center / cover no-repeat;
 }
 
+.background.facebook {
+    background: url('Scenes/BackgroundFacebook.png') center center / cover no-repeat;
+}
+
+.background.harvard {
+    background: url('Scenes/Harvard.png') center center / cover no-repeat;
+}
+
+.background.theatre {
+    background: url('Scenes/theatre.png') center center / cover no-repeat;
+}
+
 .background.outdoor {
     background: url('Scenes/OutdoorBackground.png') center center / cover no-repeat;
 }
