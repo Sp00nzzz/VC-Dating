@@ -175,7 +175,8 @@ function hideSplashScreen() {
     const titleBg = new Image();
     titleBg.src = 'TitleScreen.png';
     
-    titleBg.onload = () => {
+    // Function to transition to title screen
+    const transitionToTitle = () => {
         // Once title screen is loaded, show it first (while splash is still visible)
         titleScreen.classList.remove('hidden');
         
@@ -189,17 +190,24 @@ function hideSplashScreen() {
         }, 50);
     };
     
+    titleBg.onload = transitionToTitle;
+    titleBg.onerror = () => {
+        console.log("Title screen image failed to load, proceeding anyway");
+        transitionToTitle();
+    };
+    
     // Fallback in case image is already cached
     if (titleBg.complete) {
-        titleScreen.classList.remove('hidden');
-        setTimeout(() => {
-            splashScreen.classList.add('hidden');
-            // After fade completes (2s), completely remove it from layout
-            setTimeout(() => {
-                splashScreen.style.display = 'none';
-            }, 2000);
-        }, 50);
+        transitionToTitle();
     }
+    
+    // Fallback timeout in case image loading hangs
+    setTimeout(() => {
+        if (!titleScreen.classList.contains('hidden')) {
+            console.log("Title screen transition timeout, forcing transition");
+            transitionToTitle();
+        }
+    }, 3000);
 }
 
 // Create falling cherry blossom petals effect
