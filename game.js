@@ -53,6 +53,24 @@ let transitionScreen, transitionText;
 let splashScreen;
 let enableMusicListener = null; // Store reference to the listener
 
+// Test image loading for debugging
+function testImageLoading() {
+    const testImages = [
+        'TitleScreen.png',
+        'DateATechie-Logo.png',
+        'Characters/MarkCuban/MarkCuban.png',
+        'Characters/JensenHuang/JensenHuang.png',
+        'Characters/MarkZuckeberg/MarkZuck.png'
+    ];
+    
+    testImages.forEach(src => {
+        const img = new Image();
+        img.onload = () => console.log(`✅ Image loaded: ${src}`);
+        img.onerror = () => console.log(`❌ Image failed: ${src}`);
+        img.src = src;
+    });
+}
+
 // Initialize the game
 function init() {
     // Get DOM elements
@@ -163,6 +181,9 @@ function init() {
     // Initialize cherry blossom petals
     createCherryBlossomPetals();
     createSplashPetals();
+    
+    // Test image loading for debugging
+    testImageLoading();
 }
 
 // Hide splash screen and show title screen
@@ -173,7 +194,7 @@ function hideSplashScreen() {
     
     // Preload title screen background
     const titleBg = new Image();
-    titleBg.src = 'TitleScreen.png';
+    titleBg.src = './TitleScreen.png';
     
     // Function to transition to title screen
     const transitionToTitle = () => {
@@ -190,9 +211,13 @@ function hideSplashScreen() {
         }, 50);
     };
     
-    titleBg.onload = transitionToTitle;
-    titleBg.onerror = () => {
-        console.log("Title screen image failed to load, proceeding anyway");
+    titleBg.onload = () => {
+        console.log("Title screen image loaded successfully");
+        transitionToTitle();
+    };
+    titleBg.onerror = (e) => {
+        console.log("Title screen image failed to load:", e);
+        console.log("Attempted to load:", titleBg.src);
         transitionToTitle();
     };
     
@@ -624,6 +649,13 @@ function loadScene(sceneIndex) {
         } else {
             characterSprite.src = currentSprites[scene.character];
         }
+        
+        // Add error handling for character sprites
+        characterSprite.onerror = (e) => {
+            console.log("Character sprite failed to load:", e);
+            console.log("Attempted to load:", characterSprite.src);
+        };
+        
         characterContainer.style.display = 'flex';
     } else {
         characterContainer.style.display = 'none';
