@@ -106,9 +106,9 @@ export const markZuckerbergStory = [
     // Scene 8: Initial conversation
     {
         background: "facebook",
-        character: "neutral",
+        character: "affectionate",
         speaker: "Mark Zuckerberg",
-        text: "I've been following your work on social connectivity algorithms. Your approach to understanding human relationships through data is... fascinating. Tell me, what drives you?",
+        text: "I've been following your work on social connectivity algorithms. Your approach to understanding human relationships through data is... absolutely captivating. There's something about the way you think that just draws me in. Tell me, what drives you?",
         choices: [
             {
                 text: "I'm passionate about connecting people",
@@ -127,36 +127,36 @@ export const markZuckerbergStory = [
     // Scene 9: Connection response
     {
         background: "facebook",
-        character: "laugh",
+        character: "blush",
         speaker: "Mark Zuckerberg",
-        text: "That's exactly what I hoped you'd say. Connection is everything. When I started Facebook in my dorm room, I never imagined it would become what it is today. But the core mission remains the same - bringing people together.",
+        text: "That's exactly what I hoped you'd say. Connection is everything... and there's something about the way you say it that makes my heart skip a beat. When I started Facebook in my dorm room, I never imagined it would become what it is today. But the core mission remains the same - bringing people together, creating those moments when you just... click with someone.",
         choices: null,
         nextScene: 12
     },
     // Scene 10: Problem-solving response
     {
         background: "facebook",
-        character: "confused",
+        character: "flustered",
         speaker: "Mark Zuckerberg",
-        text: "Interesting perspective. I've always been drawn to the human side of technology. The algorithms are just tools - the real challenge is understanding what people actually want and need.",
+        text: "Interesting perspective... and honestly, it's refreshing to meet someone who thinks so deeply. I've always been drawn to the human side of technology. The algorithms are just tools - the real challenge is understanding what people actually want and need. And you... you seem to understand that better than most.",
         choices: null,
         nextScene: 12
     },
     // Scene 11: Human behavior response
     {
         background: "facebook",
-        character: "affectionate",
+        character: "laugh",
         speaker: "Mark Zuckerberg",
-        text: "Now that's something I can relate to. Understanding human behavior is at the heart of everything we do here. It's not just about data - it's about empathy, about truly understanding what drives people to connect.",
+        text: "Now that's something I can relate to... and it's incredibly attractive when someone gets it like you do. Understanding human behavior is at the heart of everything we do here. It's not just about data - it's about empathy, about truly understanding what drives people to connect. And right now, I'm feeling a very strong connection to you.",
         choices: null,
         nextScene: 12
     },
     // Scene 12: Deeper conversation
     {
         background: "facebook",
-        character: "neutral",
+        character: "affectionate",
         speaker: "Mark Zuckerberg",
-        text: "I've been thinking about the future of social connection. We're at an inflection point where technology can either bring us closer together or drive us further apart. What do you think?",
+        text: "I've been thinking about the future of social connection... and honestly, sitting here with you, I'm feeling more connected than I have in a long time. We're at an inflection point where technology can either bring us closer together or drive us further apart. What do you think?",
         choices: [
             {
                 text: "Technology should enhance human connection",
@@ -175,36 +175,36 @@ export const markZuckerbergStory = [
     // Scene 13: Enhancement response
     {
         background: "facebook",
-        character: "laugh",
+        character: "blush",
         speaker: "Mark Zuckerberg",
-        text: "Exactly! That's the vision I've been working toward. Technology should amplify our humanity, not replace it. When I see families connecting across continents, friends reuniting after years apart, that's when I know we're on the right path.",
+        text: "Exactly! That's the vision I've been working toward... and hearing you say it makes me feel like we're on the same wavelength. Technology should amplify our humanity, not replace it. When I see families connecting across continents, friends reuniting after years apart, that's when I know we're on the right path. And right now, I feel like we're connecting in a way that's... special.",
         choices: null,
         nextScene: 16
     },
     // Scene 14: Privacy response
     {
         background: "facebook",
-        character: "confused",
+        character: "flustered",
         speaker: "Mark Zuckerberg",
-        text: "Privacy is crucial, and it's something we take very seriously. But I believe we can have both - meaningful connections and privacy protection. It's about giving people control over their data while still enabling the connections that matter most.",
+        text: "Privacy is crucial, and it's something we take very seriously... though I have to admit, there's something about this conversation that makes me want to be completely open with you. But I believe we can have both - meaningful connections and privacy protection. It's about giving people control over their data while still enabling the connections that matter most. Like this one we're having right now.",
         choices: null,
         nextScene: 16
     },
     // Scene 15: Authentic relationships response
     {
         background: "facebook",
-        character: "affectionate",
+        character: "laugh",
         speaker: "Mark Zuckerberg",
-        text: "That's beautiful. Authenticity is what makes social media powerful. When people share their real selves, their real experiences, that's when true connection happens. That's the kind of platform I want to build.",
+        text: "That's beautiful... and incredibly attractive coming from you. Authenticity is what makes social media powerful. When people share their real selves, their real experiences, that's when true connection happens. That's the kind of platform I want to build. And sitting here with you, I feel like I can be completely authentic, completely myself.",
         choices: null,
         nextScene: 16
     },
     // Scene 16: Personal moment
     {
         background: "facebook",
-        character: "neutral",
+        character: "blush",
         speaker: "Mark Zuckerberg",
-        text: "You know, I don't often get to have conversations like this. Most people want to talk about business metrics or technical details. But you... you understand the human element. That's rare.",
+        text: "You know, I don't often get to have conversations like this... and honestly, I'm finding myself drawn to you in a way I didn't expect. Most people want to talk about business metrics or technical details. But you... you understand the human element. That's rare, and it's making me feel things I haven't felt in a long time.",
         choices: [
             {
                 text: "I appreciate you sharing that",
@@ -223,36 +223,36 @@ export const markZuckerbergStory = [
     // Scene 17: Appreciation response
     {
         background: "facebook",
-        character: "blush",
+        character: "flustered",
         speaker: "Mark Zuckerberg",
-        text: "Thank you. It means a lot to hear that. Sometimes I wonder if people see me as just the CEO, not as... well, as a person with dreams and fears like everyone else.",
+        text: "Thank you... and wow, the way you look at me when you say that... it's making my heart race. It means a lot to hear that. Sometimes I wonder if people see me as just the CEO, not as... well, as a person with dreams and fears like everyone else. But with you, I feel seen, really seen.",
         choices: null,
         nextScene: 20
     },
     // Scene 18: Loneliness response
     {
         background: "facebook",
-        character: "sad",
+        character: "affectionate",
         speaker: "Mark Zuckerberg",
-        text: "You're perceptive. It can be isolating. The decisions I make affect billions of people, and that weight... it's something I carry every day. But I wouldn't trade it for anything. The mission is worth it.",
+        text: "You're perceptive... and incredibly understanding. It can be isolating. The decisions I make affect billions of people, and that weight... it's something I carry every day. But sitting here with you, I feel less alone than I have in a long time. The mission is worth it, and moments like this make it all worthwhile.",
         choices: null,
         nextScene: 20
     },
     // Scene 19: Vision response
     {
         background: "facebook",
-        character: "laugh",
+        character: "blush",
         speaker: "Mark Zuckerberg",
-        text: "I love talking about the vision! I see a world where distance doesn't matter, where people can connect across any barrier. Virtual reality, augmented reality, the metaverse... it's all about bringing people together in new ways.",
+        text: "I love talking about the vision... especially with someone as captivating as you! I see a world where distance doesn't matter, where people can connect across any barrier. Virtual reality, augmented reality, the metaverse... it's all about bringing people together in new ways. And right now, I'm feeling a connection that transcends any technology.",
         choices: null,
         nextScene: 20
     },
     // Scene 20: The invitation
     {
         background: "facebook",
-        character: "neutral",
+        character: "affectionate",
         speaker: "Mark Zuckerberg",
-        text: "I have an idea. There's something I'd like to show you - a place that's very special to me. It's where it all began. Would you be interested in seeing where Facebook was born?",
+        text: "I have an idea... and I'm hoping you'll say yes. There's something I'd like to show you - a place that's very special to me. It's where it all began. Would you be interested in seeing where Facebook was born? I'd love to share that part of my story with you.",
         choices: [
             {
                 text: "I'd love to see it!",
@@ -271,36 +271,36 @@ export const markZuckerbergStory = [
     // Scene 21: Enthusiastic response
     {
         background: "facebook",
-        character: "laugh",
+        character: "blush",
         speaker: "Mark Zuckerberg",
-        text: "Great! I'm excited to show you. It's been a while since I've been back there, but it holds so many memories. The place where a simple idea became something that changed the world.",
+        text: "Great! I'm excited to show you... and honestly, I'm excited to spend more time with you. It's been a while since I've been back there, but it holds so many memories. The place where a simple idea became something that changed the world. And maybe... where something new could begin.",
         choices: null,
         nextScene: 24
     },
     // Scene 22: Positive response
     {
         background: "facebook",
-        character: "affectionate",
+        character: "laugh",
         speaker: "Mark Zuckerberg",
-        text: "I'm glad you're interested. It's not just about the history - it's about understanding where we came from and where we're going. That perspective is important.",
+        text: "I'm glad you're interested... and I have to admit, I'm really looking forward to this. It's not just about the history - it's about understanding where we came from and where we're going. That perspective is important, and sharing it with someone like you makes it even more meaningful.",
         choices: null,
         nextScene: 24
     },
     // Scene 23: Curious response
     {
         background: "facebook",
-        character: "confused",
+        character: "flustered",
         speaker: "Mark Zuckerberg",
-        text: "The journey has been... complicated. There have been ups and downs, mistakes and successes. But every step has taught me something about people, about connection, about what really matters.",
+        text: "The journey has been... complicated. There have been ups and downs, mistakes and successes. But every step has taught me something about people, about connection, about what really matters. And right now, I'm learning something new about connection... with you.",
         choices: null,
         nextScene: 24
     },
     // Scene 24: Transition to Harvard
     {
         background: "facebook",
-        character: "neutral",
+        character: "affectionate",
         speaker: "Mark Zuckerberg",
-        text: "Let's go. I have a car waiting. The drive to Cambridge will give us time to talk more about your work and your vision for the future of social connection.",
+        text: "Let's go. I have a car waiting... and I'm really looking forward to this time together. The drive to Cambridge will give us time to talk more about your work and your vision for the future of social connection. I have a feeling this is going to be... special.",
         choices: null,
         nextScene: 25
     },
@@ -316,9 +316,9 @@ export const markZuckerbergStory = [
     // Scene 26: Conversation in the car
     {
         background: "facebook",
-        character: "neutral",
+        character: "blush",
         speaker: "Mark Zuckerberg",
-        text: "You know, I don't get many chances to just... talk. Most of my conversations are about strategy, about numbers, about the next big thing. But this feels different. Natural.",
+        text: "You know, I don't get many chances to just... talk. Most of my conversations are about strategy, about numbers, about the next big thing. But this feels different. Natural... and honestly, I'm finding myself drawn to you in a way that's both exciting and a little scary.",
         choices: [
             {
                 text: "I feel the same way",
@@ -337,27 +337,27 @@ export const markZuckerbergStory = [
     // Scene 27: Mutual feeling
     {
         background: "facebook",
-        character: "blush",
+        character: "laugh",
         speaker: "Mark Zuckerberg",
-        text: "That's exactly what I was hoping you'd say. There's something about talking to someone who really gets it, who understands both the technical and the human side of what we do.",
+        text: "That's exactly what I was hoping you'd say... and it's making my heart race. There's something about talking to someone who really gets it, who understands both the technical and the human side of what we do. But more than that, there's something about you that makes me want to be completely open, completely vulnerable.",
         choices: null,
         nextScene: 30
     },
     // Scene 28: Connection difficulty
     {
         background: "facebook",
-        character: "sad",
+        character: "affectionate",
         speaker: "Mark Zuckerberg",
-        text: "It is. The higher you climb, the harder it becomes to know who's genuine and who's just... interested in what you can do for them. But with you, I don't feel that pressure.",
+        text: "It is. The higher you climb, the harder it becomes to know who's genuine and who's just... interested in what you can do for them. But with you, I don't feel that pressure. I feel like I can be myself, completely myself, and that's... incredibly refreshing and attractive.",
         choices: null,
         nextScene: 30
     },
     // Scene 29: Honored response
     {
         background: "facebook",
-        character: "affectionate",
+        character: "flustered",
         speaker: "Mark Zuckerberg",
-        text: "I appreciate that. It's not often I meet someone I feel comfortable being completely myself around. There's something special about this conversation.",
+        text: "I appreciate that... and the way you say it makes me feel things I haven't felt in a long time. It's not often I meet someone I feel comfortable being completely myself around. There's something special about this conversation... and about you.",
         choices: null,
         nextScene: 30
     },
@@ -372,28 +372,28 @@ export const markZuckerbergStory = [
     },
     // Scene 31: Harvard memories
     {
-        background: "facebook",
-        character: "neutral",
+        background: "harvard",
+        character: "affectionate",
         speaker: "Mark Zuckerberg",
-        text: "This place... it's where everything started. I was just a kid with an idea, trying to figure out how to connect people. I had no idea it would become what it is today.",
+        text: "This place... it's where everything started. I was just a kid with an idea, trying to figure out how to connect people. I had no idea it would become what it is today... and I had no idea I'd meet someone like you who makes me feel that same excitement all over again.",
         choices: null,
         nextScene: 32
     },
     // Scene 32: The dorm building
     {
-        background: "facebook",
-        character: "neutral",
+        background: "harvard",
+        character: "blush",
         speaker: "Mark Zuckerberg",
-        text: "That building right there - Kirkland House. That's where I lived, where I coded the first version of Facebook in my dorm room. It feels like a lifetime ago.",
+        text: "That building right there - Kirkland House. That's where I lived, where I coded the first version of Facebook in my dorm room. It feels like a lifetime ago... but being here with you makes me feel young again, full of possibilities.",
         choices: null,
         nextScene: 33
     },
     // Scene 33: Emotional moment
     {
-        background: "facebook",
-        character: "sad",
+        background: "harvard",
+        character: "flustered",
         speaker: "Mark Zuckerberg",
-        text: "Sometimes I wonder what that young kid would think of what I've become. Would he be proud? Would he recognize the person I am now?",
+        text: "Sometimes I wonder what that young kid would think of what I've become. Would he be proud? Would he recognize the person I am now? And would he be surprised that I'm standing here with someone who makes me feel more alive than I have in years?",
         choices: [
             {
                 text: "I think he'd be proud of your impact",
@@ -411,37 +411,37 @@ export const markZuckerbergStory = [
     },
     // Scene 34: Proud response
     {
-        background: "facebook",
-        character: "laugh",
+        background: "harvard",
+        character: "blush",
         speaker: "Mark Zuckerberg",
-        text: "Thank you. That means a lot. I hope so too. The mission hasn't changed - connecting people, making the world more open and connected. That's still what drives me every day.",
+        text: "Thank you... and the way you say that makes my heart skip a beat. That means a lot. I hope so too. The mission hasn't changed - connecting people, making the world more open and connected. That's still what drives me every day. And right now, I'm feeling more connected than I have in a long time.",
         choices: null,
         nextScene: 37
     },
     // Scene 35: Growth response
     {
-        background: "facebook",
-        character: "confused",
+        background: "harvard",
+        character: "affectionate",
         speaker: "Mark Zuckerberg",
-        text: "You're right. The core of who I am, what I believe in, that hasn't changed. But the responsibility, the scale, the complexity... that's what's different now.",
+        text: "You're right... and you understand me in a way that's both comforting and exciting. The core of who I am, what I believe in, that hasn't changed. But the responsibility, the scale, the complexity... that's what's different now. Though being here with you makes me feel like that young kid again, full of dreams and possibilities.",
         choices: null,
         nextScene: 37
     },
     // Scene 36: Advice question
     {
-        background: "facebook",
-        character: "neutral",
+        background: "harvard",
+        character: "laugh",
         speaker: "Mark Zuckerberg",
-        text: "That's a great question. I'd tell him to stay true to the mission, but also to be prepared for the weight of responsibility that comes with success. And to never lose sight of the human element in everything we do.",
+        text: "That's a great question... and it's making me think about what I'd tell him about love, about connection. I'd tell him to stay true to the mission, but also to be prepared for the weight of responsibility that comes with success. And to never lose sight of the human element in everything we do... especially when you meet someone who makes you feel alive again.",
         choices: null,
         nextScene: 37
     },
     // Scene 37: Transition to dorm
     {
-        background: "facebook",
-        character: "neutral",
+        background: "harvard",
+        character: "affectionate",
         speaker: "Mark Zuckerberg",
-        text: "Come on, let me show you the actual room where it all began. I have special access to the building. It's been preserved as a kind of historical site.",
+        text: "Come on, let me show you the actual room where it all began... and where maybe something new could start. I have special access to the building. It's been preserved as a kind of historical site, but being here with you makes it feel like a place of new beginnings.",
         choices: null,
         nextScene: 38
     },
@@ -486,9 +486,9 @@ export const markZuckerbergStory = [
     // Scene 42: Mark's memories
     {
         background: "harvard",
-        character: "sad",
+        character: "flustered",
         speaker: "Mark Zuckerberg",
-        text: "I spent so many nights here, coding until dawn. Eduardo would be sleeping in that bed, and I'd be at this desk, trying to figure out how to make people connect. I had no idea what I was creating.",
+        text: "I spent so many nights here, coding until dawn. Eduardo would be sleeping in that bed, and I'd be at this desk, trying to figure out how to make people connect. I had no idea what I was creating... and I had no idea that years later, I'd be standing here with someone who makes me feel that same passion, that same excitement about connection.",
         choices: [
             {
                 text: "What was it like in those early days?",
@@ -543,9 +543,9 @@ export const markZuckerbergStory = [
     // Scene 47: Emotional moment
     {
         background: "harvard",
-        character: "affectionate",
+        character: "blush",
         speaker: "Mark Zuckerberg",
-        text: "You know, being back here makes me remember why I started this. It wasn't about money or fame or power. It was about connection. About making the world feel smaller, more connected.",
+        text: "You know, being back here makes me remember why I started this. It wasn't about money or fame or power. It was about connection. About making the world feel smaller, more connected. And right now, standing here with you, I feel more connected than I have in years... and it's making me realize what I've been missing.",
         choices: [
             {
                 text: "That's a beautiful mission",
@@ -564,27 +564,27 @@ export const markZuckerbergStory = [
     // Scene 48: Beautiful mission response
     {
         background: "harvard",
-        character: "laugh",
+        character: "flustered",
         speaker: "Mark Zuckerberg",
-        text: "Thank you. Sometimes I lose sight of that, get caught up in the business side of things. But being here reminds me of what really matters - the human connections we enable every day.",
+        text: "Thank you... and the way you say that makes me feel things I haven't felt in a long time. Sometimes I lose sight of that, get caught up in the business side of things. But being here with you reminds me of what really matters - the human connections we enable every day. And this connection we're having right now... it's reminding me of what I've been missing.",
         choices: null,
         nextScene: 51
     },
     // Scene 49: Still feel that way response
     {
         background: "harvard",
-        character: "confused",
+        character: "affectionate",
         speaker: "Mark Zuckerberg",
-        text: "I do, but it's more complex now. The mission is the same, but the responsibility is enormous. Every decision affects billions of people. It's not just about connecting friends anymore.",
+        text: "I do, but it's more complex now... though being here with you makes me feel that same passion again. The mission is the same, but the responsibility is enormous. Every decision affects billions of people. It's not just about connecting friends anymore. But right now, I'm feeling a personal connection that reminds me why this all matters.",
         choices: null,
         nextScene: 51
     },
     // Scene 50: What would you change response
     {
         background: "harvard",
-        character: "sad",
+        character: "laugh",
         speaker: "Mark Zuckerberg",
-        text: "I'd be more careful about privacy from the beginning. I'd think more about the unintended consequences. But I wouldn't change the core mission - connecting people is still the most important thing we do.",
+        text: "I'd be more careful about privacy from the beginning. I'd think more about the unintended consequences. But I wouldn't change the core mission - connecting people is still the most important thing we do. And right now, I'm feeling more connected than I have in years... and it's making me realize what I've been missing in my personal life.",
         choices: null,
         nextScene: 51
     },
@@ -716,18 +716,18 @@ export const markZuckerbergStory = [
     // Scene 62: The screening room
     {
         background: "theatre",
-        character: "neutral",
+        character: "affectionate",
         speaker: "Mark Zuckerberg",
-        text: "I've arranged for a private screening. It's been a while since I've watched this, but I thought it might help you understand the journey better. The good, the bad, and the complicated.",
+        text: "I've arranged for a private screening... just for us. It's been a while since I've watched this, but I thought it might help you understand the journey better. The good, the bad, and the complicated. And maybe... it'll help you understand me better too.",
         choices: null,
         nextScene: 63
     },
     // Scene 63: Before the movie
     {
         background: "theatre",
-        character: "neutral",
+        character: "flustered",
         speaker: "Mark Zuckerberg",
-        text: "I should warn you - this movie doesn't paint me in the most flattering light. But that's okay. It's important to see different perspectives, to understand how others see what we've built.",
+        text: "I should warn you - this movie doesn't paint me in the most flattering light. But that's okay... and honestly, I'm a little nervous about what you'll think of me after seeing it. It's important to see different perspectives, to understand how others see what we've built. But I hope you'll see the real me too.",
         choices: [
             {
                 text: "I'm interested in your perspective",
@@ -746,27 +746,27 @@ export const markZuckerbergStory = [
     // Scene 64: Interested in perspective response
     {
         background: "theatre",
-        character: "laugh",
+        character: "blush",
         speaker: "Mark Zuckerberg",
-        text: "Good. Because the real story is more complex than any movie could capture. There were mistakes, there were conflicts, but there was also genuine passion for the mission.",
+        text: "Good... and I'm really glad you're here with me for this. Because the real story is more complex than any movie could capture. There were mistakes, there were conflicts, but there was also genuine passion for the mission. And right now, I'm feeling that same passion again... but for something different.",
         choices: null,
         nextScene: 67
     },
     // Scene 65: How do you feel response
     {
         background: "theatre",
-        character: "sad",
+        character: "affectionate",
         speaker: "Mark Zuckerberg",
-        text: "It's complicated. Some of it is accurate, some of it isn't. But what matters is that it shows the human side of building something big. The relationships, the conflicts, the growth.",
+        text: "It's complicated... and honestly, I'm a little vulnerable sharing this with you. Some of it is accurate, some of it isn't. But what matters is that it shows the human side of building something big. The relationships, the conflicts, the growth. And right now, I'm feeling like I want to share more of my human side with you.",
         choices: null,
         nextScene: 67
     },
     // Scene 66: Let's watch response
     {
         background: "theatre",
-        character: "affectionate",
+        character: "laugh",
         speaker: "Mark Zuckerberg",
-        text: "I'm glad you're here. It's not often I get to share this experience with someone who really understands what we do. This should be interesting.",
+        text: "I'm glad you're here... and I have to admit, I'm really looking forward to this time together. It's not often I get to share this experience with someone who really understands what we do. This should be interesting... and maybe it'll bring us even closer together.",
         choices: null,
         nextScene: 67
     },
@@ -782,18 +782,18 @@ export const markZuckerbergStory = [
     // Scene 68: Watching the early scenes
     {
         background: "theatre",
-        character: "neutral",
+        character: "blush",
         speaker: "Mark Zuckerberg",
-        text: "This part is pretty accurate. The late nights, the coding marathons, the obsession with getting it right. I was completely consumed by the idea of connecting people.",
+        text: "This part is pretty accurate. The late nights, the coding marathons, the obsession with getting it right. I was completely consumed by the idea of connecting people... and right now, I'm feeling that same obsession, but for a different kind of connection. With you.",
         choices: null,
         nextScene: 69
     },
     // Scene 69: The conflicts
     {
         background: "theatre",
-        character: "sad",
+        character: "flustered",
         speaker: "Mark Zuckerberg",
-        text: "The conflicts with Eduardo... those were real. We were young, we made mistakes. I wish I had handled things differently, but I was learning how to be a leader.",
+        text: "The conflicts with Eduardo... those were real. We were young, we made mistakes. I wish I had handled things differently, but I was learning how to be a leader. And honestly, watching this with you makes me feel vulnerable... but also safe, like I can be completely honest about my mistakes.",
         choices: [
             {
                 text: "Do you still talk to Eduardo?",
@@ -812,9 +812,9 @@ export const markZuckerbergStory = [
     // Scene 70: Still talk to Eduardo response
     {
         background: "theatre",
-        character: "sad",
+        character: "affectionate",
         speaker: "Mark Zuckerberg",
-        text: "Not really. We've both moved on, but I think about those early days often. Eduardo was a good friend, and I wish things had turned out differently.",
+        text: "Not really. We've both moved on, but I think about those early days often. Eduardo was a good friend, and I wish things had turned out differently. But being here with you makes me think about the friendships and connections that really matter... and I'm feeling like I want to build something meaningful with you.",
         choices: null,
         nextScene: 73
     },
@@ -962,9 +962,9 @@ export const markZuckerbergStory = [
     // Scene 84: The connection
     {
         background: "theatre",
-        character: "affectionate",
+        character: "blush",
         speaker: "Mark Zuckerberg",
-        text: "You know, this has been one of the most meaningful conversations I've had in a long time. You understand both the technical and human side of what we do. That's rare.",
+        text: "You know, this has been one of the most meaningful conversations I've had in a long time... and honestly, I'm feeling things I haven't felt in years. You understand both the technical and human side of what we do. That's rare... and incredibly attractive. I feel like I can be completely myself with you.",
         choices: [
             {
                 text: "I feel the same way",
@@ -983,36 +983,36 @@ export const markZuckerbergStory = [
     // Scene 85: Feel the same way response
     {
         background: "theatre",
-        character: "laugh",
+        character: "flustered",
         speaker: "Mark Zuckerberg",
-        text: "I'm glad. There's something special about connecting with someone who really gets it. It reminds me of why I started this whole thing in the first place.",
+        text: "I'm glad... and the way you say that makes my heart race. There's something special about connecting with someone who really gets it. It reminds me of why I started this whole thing in the first place... and it's making me want to start something new with you.",
         choices: null,
         nextScene: 88
     },
     // Scene 86: Thank you response
     {
         background: "theatre",
-        character: "blush",
+        character: "laugh",
         speaker: "Mark Zuckerberg",
-        text: "Thank you for listening, for understanding. It's not often I get to be completely myself with someone. This has been... refreshing.",
+        text: "Thank you for listening, for understanding... and for making me feel alive again. It's not often I get to be completely myself with someone. This has been... refreshing, and exciting, and it's making me realize what I've been missing in my life.",
         choices: null,
         nextScene: 88
     },
     // Scene 87: What happens next response
     {
         background: "theatre",
-        character: "neutral",
+        character: "affectionate",
         speaker: "Mark Zuckerberg",
-        text: "That's a great question. I'd like to continue this conversation, to explore what we could build together. There's something here, something special.",
+        text: "That's a great question... and I'm hoping you'll want to explore this too. I'd like to continue this conversation, to explore what we could build together. There's something here, something special... and I'm feeling like this could be the beginning of something beautiful.",
         choices: null,
         nextScene: 88
     },
     // Scene 88: The moment of truth
     {
         background: "theatre",
-        character: "affectionate",
+        character: "flustered",
         speaker: "Mark Zuckerberg",
-        text: "I have to ask... would you be interested in working with me? Not just on algorithms, but on the human side of connection. I think we could build something amazing together.",
+        text: "I have to ask... and I'm a little nervous about this, but would you be interested in working with me? Not just on algorithms, but on the human side of connection. I think we could build something amazing together... and honestly, I'm hoping for something more than just professional collaboration.",
         choices: [
             {
                 text: "I'd love to work with you",
@@ -1031,27 +1031,27 @@ export const markZuckerbergStory = [
     // Scene 89: Love to work response
     {
         background: "theatre",
-        character: "laugh",
+        character: "blush",
         speaker: "Mark Zuckerberg",
-        text: "Excellent! I'm excited about what we could build together. Your understanding of both technology and human connection is exactly what we need for the next phase of our mission.",
+        text: "Excellent! I'm excited about what we could build together... and I have to admit, I'm excited about spending more time with you. Your understanding of both technology and human connection is exactly what we need for the next phase of our mission... and for my personal life too.",
         choices: null,
         nextScene: 92
     },
     // Scene 90: Need to think response
     {
         background: "theatre",
-        character: "confused",
+        character: "affectionate",
         speaker: "Mark Zuckerberg",
-        text: "I understand. It's a big decision. Take all the time you need. I believe in what we could accomplish together, but I want you to be sure it's right for you.",
+        text: "I understand... and I respect that. It's a big decision. Take all the time you need. I believe in what we could accomplish together, but I want you to be sure it's right for you. And I hope you know that I'm interested in more than just professional collaboration... I'm feeling something deeper here.",
         choices: null,
         nextScene: 93
     },
     // Scene 91: What kind of work response
     {
         background: "theatre",
-        character: "neutral",
+        character: "laugh",
         speaker: "Mark Zuckerberg",
-        text: "I'm thinking about a new division focused on human-centered AI. Not just algorithms, but technology that truly understands and enhances human connection. Your background would be perfect for leading that effort.",
+        text: "I'm thinking about a new division focused on human-centered AI... and honestly, I'm thinking about a new chapter in my personal life too. Not just algorithms, but technology that truly understands and enhances human connection. Your background would be perfect for leading that effort... and for being a part of my life.",
         choices: null,
         nextScene: 94
     },
