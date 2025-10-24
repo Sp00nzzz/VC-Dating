@@ -51,6 +51,15 @@
         
         <!-- UI Container -->
         <div class="ui-container">
+            <!-- Chapter Select Button (for gameplay) -->
+            <div class="gameplay-chapter-select hidden" id="gameplayChapterSelect">
+                <div class="selection-label">
+                    <img src="CharacterSelectScreen/chapter-select-banner-new.svg" alt="" class="label-banner" draggable="false">
+                    <img src="CharacterSelectScreen/chapter-select-icon-new.svg" alt="" class="label-icon" draggable="false">
+                    <span>Return to Menu</span>
+                </div>
+            </div>
+            
             <!-- Dialogue Box -->
             <div class="dialogue-box" id="dialogueBox">
                 <div class="character-name" id="characterName"></div>
@@ -113,6 +122,7 @@
         
         <!-- Ending Screen -->
         <div class="ending-screen" id="endingScreen">
+            <button class="menu-button" id="menuButton">Return to Menu</button>
             <div class="ending-content">
                 <h2 class="ending-title" id="endingTitle"></h2>
                 <p class="ending-description" id="endingDescription"></p>
@@ -158,7 +168,7 @@
         </div>
     </div>
     
-    <script src="game.js"></script>
+    <script type="module" src="game.js"></script>
 </body>
 </html>
 

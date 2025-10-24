@@ -12,12 +12,19 @@ npm run dev
 
 Then open your browser to `http://localhost:3000`
 
-### Alternative
-1. Open `index.html` directly in your web browser
+### 🔗 Direct Character Routes
+You can now jump directly to any character's story:
+- **Mark Cuban**: `http://localhost:3000/markcuban`
+- **Jensen Huang**: `http://localhost:3000/jensenhuang`
+- **Mark Zuckerberg**: `http://localhost:3000/markzuckerberg`
+
+### Traditional Flow
+1. Open `http://localhost:3000` (or `index.html` directly)
 2. Click through the splash screen
-3. Select your character (Mark Cuban or Jensen Huang)
-4. Make choices that will affect your relationship and story
-5. Play through multiple times to discover all the different endings!
+3. Click "Start Game" to see character selection
+4. Choose your character
+5. Make choices that affect your relationship and story
+6. Play through multiple times to discover all the different endings!
 
 ## 📖 Three Unique Routes
 
@@ -120,14 +127,30 @@ npm preview
 
 ```
 VC-Dating/
-├── index.html          # Main HTML file
-├── game.js             # Game logic and story data
-├── styles.css          # All styling and animations
-├── Characters/         # Character sprites
-├── Scenes/            # Background images
-├── *.mp3              # Audio files
-└── package.json       # Project dependencies
+├── index.html              # Main HTML file
+├── game.js                 # Main game logic (759 lines)
+├── markCubanStory.js       # Mark Cuban route (577 lines)
+├── jensenHuangStory.js     # Jensen Huang route (742 lines)
+├── markZuckerbergStory.js  # Mark Zuckerberg route (50 lines)
+├── styles.css              # All styling and animations
+├── vite.config.js          # Vite configuration
+├── Characters/             # Character sprites
+├── Scenes/                 # Background images
+├── *.mp3                   # Audio files
+└── package.json            # Project dependencies
 ```
+
+### 📝 Story File Structure
+
+Each story file (`*Story.js`) exports:
+- `story` - Array of scene objects
+- `sprites` - Character sprite mappings
+- `endings` - Route-specific endings
+
+This modular structure makes it easy to:
+- Add new character routes
+- Update individual stories
+- Maintain clean separation of concerns
 
 ---
 
