@@ -168,16 +168,7 @@
         </div>
     </div>
     
-    <script type="module" src="game.js"></script>
-    <script>
-        // Fallback for module loading issues
-        window.addEventListener('load', () => {
-            console.log('Page fully loaded');
-            if (typeof init === 'undefined') {
-                console.error('Game script not loaded properly');
-            }
-        });
-    </script>
+    <script src="game-bundle.js"></script>
 </body>
 </html>
 
