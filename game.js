@@ -936,6 +936,7 @@ function checkMobileDevice() {
         // Show mobile screen
         if (mobileScreen) {
             mobileScreen.classList.remove('hidden');
+            createCherryBlossoms();
             console.log('Mobile screen should be visible now');
         } else {
             console.error('Mobile screen element not found');
@@ -998,5 +999,44 @@ window.addEventListener('resize', () => {
     }
 });
 
+// Cherry Blossom Effect for Mobile
+function createCherryBlossoms() {
+    const cherryContainer = document.getElementById('cherryBlossoms');
+    if (!cherryContainer) return;
+    
+    // Clear existing petals
+    cherryContainer.innerHTML = '';
+    
+    // Create multiple petals with better distribution
+    for (let i = 0; i < 25; i++) {
+        const petal = document.createElement('div');
+        petal.className = 'cherry-petal';
+        
+        // Random horizontal position
+        petal.style.left = Math.random() * 100 + '%';
+        
+        // Random animation duration (4-8 seconds)
+        const duration = 4 + Math.random() * 4;
+        petal.style.animationDuration = duration + 's';
+        
+        // Random delay (0-4 seconds)
+        const delay = Math.random() * 4;
+        petal.style.animationDelay = delay + 's';
+        
+        cherryContainer.appendChild(petal);
+    }
+    
+    // Continuously add new petals
+    setInterval(() => {
+        if (cherryContainer.children.length < 30) {
+            const petal = document.createElement('div');
+            petal.className = 'cherry-petal';
+            petal.style.left = Math.random() * 100 + '%';
+            petal.style.animationDuration = (4 + Math.random() * 4) + 's';
+            petal.style.animationDelay = '0s';
+            cherryContainer.appendChild(petal);
+        }
+    }, 2000);
+}
 
 

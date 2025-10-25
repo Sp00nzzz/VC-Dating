@@ -870,12 +870,17 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: white;
+    background: white !important;
     z-index: 10000;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+}
+
+/* Ensure mobile screen overrides any global background */
+.mobile-screen .background {
+    display: none !important;
 }
 
 /* Hide splash screen on mobile */
@@ -893,7 +898,7 @@ body {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background: white;
+    background: white !important;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -918,8 +923,57 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 182, 193, 0.1);
     z-index: 2;
+}
+
+/* Cherry Blossom Effect */
+.mobile-cherry-blossoms {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.cherry-petal {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #ffb6c1;
+    border-radius: 50% 0 50% 0;
+    opacity: 0.8;
+    animation: cherryFall linear infinite;
+}
+
+.cherry-petal:nth-child(odd) {
+    background: #ffc0cb;
+    transform: rotate(45deg);
+}
+
+.cherry-petal:nth-child(even) {
+    background: #ffb6c1;
+    transform: rotate(-45deg);
+}
+
+.cherry-petal:nth-child(3n) {
+    background: #ffa0b4;
+    width: 8px;
+    height: 8px;
+}
+
+@keyframes cherryFall {
+    0% {
+        transform: translateY(-100vh) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
 }
 
 .mobile-logo {
