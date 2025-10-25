@@ -936,7 +936,6 @@ function checkMobileDevice() {
         // Show mobile screen
         if (mobileScreen) {
             mobileScreen.classList.remove('hidden');
-            createCherryBlossoms();
             console.log('Mobile screen should be visible now');
         } else {
             console.error('Mobile screen element not found');
@@ -999,44 +998,5 @@ window.addEventListener('resize', () => {
     }
 });
 
-// Cherry Blossom Effect for Mobile
-function createCherryBlossoms() {
-    const cherryContainer = document.getElementById('cherryBlossoms');
-    if (!cherryContainer) return;
-    
-    // Clear existing petals
-    cherryContainer.innerHTML = '';
-    
-    // Create multiple petals
-    for (let i = 0; i < 20; i++) {
-        const petal = document.createElement('div');
-        petal.className = 'cherry-petal';
-        
-        // Random horizontal position
-        petal.style.left = Math.random() * 100 + '%';
-        
-        // Random animation duration (3-8 seconds)
-        const duration = 3 + Math.random() * 5;
-        petal.style.animationDuration = duration + 's';
-        
-        // Random delay (0-3 seconds)
-        const delay = Math.random() * 3;
-        petal.style.animationDelay = delay + 's';
-        
-        cherryContainer.appendChild(petal);
-    }
-}
-
-// Start cherry blossom effect when mobile screen is shown
-function showMobileScreen() {
-    console.log('Showing mobile screen');
-    if (mobileScreen) {
-        mobileScreen.classList.remove('hidden');
-        createCherryBlossoms();
-        
-        // Recreate petals every 10 seconds for continuous effect
-        setInterval(createCherryBlossoms, 10000);
-    }
-}
 
 
