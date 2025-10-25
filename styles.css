@@ -910,7 +910,7 @@ body {
     height: 100vh;
     background: url('CharacterSelectScreen/TitleScreen 1.png') center center / cover no-repeat;
     z-index: 1;
-    background-size: cover;
+    background-size: 200%;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
