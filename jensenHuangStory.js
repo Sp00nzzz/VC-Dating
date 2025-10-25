@@ -835,15 +835,15 @@ export const jensenHuangStory = [
         choices: [
             {
                 text: "Kiss him passionately",
-                nextScene: 79
-            },
-            {
-                text: "Tell him you feel the same way",
                 nextScene: 80
             },
             {
-                text: "Suggest focusing on the business partnership",
+                text: "Tell him you feel the same way",
                 nextScene: 81
+            },
+            {
+                text: "Suggest focusing on the business partnership",
+                nextScene: 82
             },
             {
                 text: "Say you need time to think",
@@ -856,7 +856,7 @@ export const jensenHuangStory = [
         background: "dennys",
         character: "neutral",
         speaker: "Narrator",
-        text: "The conference continues, but your path with Jensen Huang takes a different direction. While the romantic connection wasn't meant to be, your professional relationship with NVIDIA opens doors you never imagined. Your research becomes the foundation for future AI breakthroughs, and you learn that sometimes the most meaningful relationships are built on mutual respect and shared vision rather than romance.",
+        text: "The conversation continues, but your path with Jensen Huang takes a different direction. While the romantic connection wasn't meant to be, your professional relationship with NVIDIA opens doors you never imagined. Your research becomes the foundation for future AI breakthroughs, and you learn that sometimes the most meaningful relationships are built on mutual respect and shared vision rather than romance.",
         choices: null,
         nextScene: 'ending_jensen_professional'
     },
