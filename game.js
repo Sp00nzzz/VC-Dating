@@ -838,8 +838,12 @@ function showEnding(endingKey) {
     thirdCharacterContainer.style.display = 'none';
     gameplayChapterSelect.classList.add('hidden');
     
-    // Show ending screen
-    endingScreen.classList.add('active');
+    // Show ending screen with fade-in
+    endingScreen.style.display = 'flex';
+    // Trigger fade-in after a brief delay to ensure display is set
+    setTimeout(() => {
+        endingScreen.classList.add('active');
+    }, 10);
 }
 
 // Router function to handle URL-based character selection
