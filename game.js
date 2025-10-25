@@ -531,47 +531,8 @@ function restartGame() {
 
 // Return to main menu
 function returnToMenu() {
-    // Navigate to root if on a character route
-    if (window.location.pathname !== '/') {
-        window.history.pushState({}, '', '/');
-    }
-    
-    // Reset game state
-    gameState.currentScene = 0;
-    gameState.choices = [];
-    gameState.selectedCharacter = null;
-    
-    // Stop all music
-    if (bgMusic) {
-        bgMusic.pause();
-        bgMusic.currentTime = 0;
-    }
-    
-    if (titleMusic) {
-        titleMusic.pause();
-        titleMusic.currentTime = 0;
-    }
-    
-    // Hide ending screen
-    endingScreen.classList.remove('active');
-    
-    // Hide character selection
-    characterSelectionScreen.classList.add('hidden');
-    
-    // Show title screen
-    titleScreen.classList.remove('hidden');
-    
-    // Reset title music if needed
-    if (titleMusic.paused) {
-        titleMusic.currentTime = 0;
-        titleMusic.play().catch(e => console.log("Music play prevented:", e));
-    }
-    
-    // Hide game elements
-    dialogueBox.style.display = 'none';
-    characterContainer.style.display = 'none';
-    secondCharacterContainer.style.display = 'none';
-    thirdCharacterContainer.style.display = 'none';
+    // Simply refresh the website and go to root directory
+    window.location.href = '/';
 }
 
 // Show transition screen
