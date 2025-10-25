@@ -23,37 +23,46 @@
     <meta name="keywords" content="dating simulator, tech billionaires, romance game, interactive story" />
     
     <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="game.js" as="script">
+    <link rel="preload" href="/DateATechie-Logo.png" as="image">
+    <link rel="preload" href="/TitleScreen.png" as="image">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&display=swap" as="style">
+    
+    <!-- Load fonts with display swap for better performance -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="game-container">
-        <!-- Background Music -->
-        <audio id="bgMusic" loop>
+        <!-- Audio elements - lazy loaded on demand -->
+        <audio id="bgMusic" loop preload="none">
             <source src="BackgroundMusic.mp3" type="audio/mpeg">
         </audio>
         
-        <!-- Title Screen Music -->
-        <audio id="titleMusic" loop>
+        <audio id="titleMusic" loop preload="none">
             <source src="TitleMenuMusic.mp3" type="audio/mpeg">
         </audio>
         
-        <!-- Character Selection Sounds -->
-        <audio id="sparkleSound">
+        <audio id="sparkleSound" preload="none">
             <source src="CharacterSelectScreen/Sparklesound.mp3" type="audio/mpeg">
         </audio>
         
-        <audio id="markCubanSound">
+        <audio id="markCubanSound" preload="none">
             <source src="CharacterSelectScreen/MarkCuban.mp3" type="audio/mpeg">
         </audio>
         
-        <audio id="jensenHuangSound">
+        <audio id="jensenHuangSound" preload="none">
             <source src="CharacterSelectScreen/JensenHuang.mp3" type="audio/mpeg">
         </audio>
         
-        <audio id="markZuckerbergSound">
+        <audio id="markZuckerbergSound" preload="none">
             <source src="CharacterSelectScreen/MarkZuckeberg.mp3" type="audio/mpeg">
         </audio>
         
@@ -133,13 +142,13 @@
             
             <!-- Characters Container -->
             <div class="title-characters">
-                <img src="/Characters/MarkZuckeberg/MarkZuck.png" alt="Mark Zuckerberg" class="title-char title-char-1" draggable="false">
-                <img src="/Characters/JensenHuang/JensenHuang.png" alt="Jensen Huang" class="title-char title-char-2" draggable="false">
-                <img src="/Characters/MarkCuban/MarkCuban.png" alt="Mark Cuban" class="title-char title-char-3" draggable="false">
+                <img src="/Characters/MarkZuckeberg/MarkZuck.png" alt="Mark Zuckerberg" class="title-char title-char-1" draggable="false" loading="lazy">
+                <img src="/Characters/JensenHuang/JensenHuang.png" alt="Jensen Huang" class="title-char title-char-2" draggable="false" loading="lazy">
+                <img src="/Characters/MarkCuban/MarkCuban.png" alt="Mark Cuban" class="title-char title-char-3" draggable="false" loading="lazy">
             </div>
             
             <!-- Bottom Right Logo -->
-            <img src="/PlumLogo.png" alt="Plum Logo" class="plum-logo" draggable="false">
+            <img src="/PlumLogo.png" alt="Plum Logo" class="plum-logo" draggable="false" loading="lazy">
         </div>
         
         <!-- Ending Screen -->
@@ -190,7 +199,7 @@
                     </div>
                 </div>
                 <div class="mobile-character">
-                    <img src="/Characters/MarkCuban/MarkCubanNervous.png" alt="Mark Cuban" draggable="false">
+                    <img src="/Characters/MarkCuban/MarkCubanNervous.png" alt="Mark Cuban" draggable="false" loading="lazy">
                 </div>
             </div>
         </div>
@@ -223,18 +232,18 @@
             
             <div class="selection-container">
                 <div class="selection-card" data-character="jensen" draggable="false">
-                    <img src="/CharacterSelectScreen/JensenSelect.png" alt="Jensen Huang" class="card-image" draggable="false">
-                    <img src="/CharacterSelectScreen/JensenHuangNameTag.png" alt="Jensen Huang" class="card-nametag" draggable="false">
+                    <img src="/CharacterSelectScreen/JensenSelect.png" alt="Jensen Huang" class="card-image" draggable="false" loading="lazy">
+                    <img src="/CharacterSelectScreen/JensenHuangNameTag.png" alt="Jensen Huang" class="card-nametag" draggable="false" loading="lazy">
                 </div>
                 
                 <div class="selection-card" data-character="cuban" draggable="false">
-                    <img src="/CharacterSelectScreen/MarkCubanSelect.png" alt="Mark Cuban" class="card-image" draggable="false">
-                    <img src="/CharacterSelectScreen/MarkCubanNameTag.png" alt="Mark Cuban" class="card-nametag" draggable="false">
+                    <img src="/CharacterSelectScreen/MarkCubanSelect.png" alt="Mark Cuban" class="card-image" draggable="false" loading="lazy">
+                    <img src="/CharacterSelectScreen/MarkCubanNameTag.png" alt="Mark Cuban" class="card-nametag" draggable="false" loading="lazy">
                 </div>
                 
                 <div class="selection-card" data-character="zuckerberg" draggable="false">
-                    <img src="/CharacterSelectScreen/MarkZuckSelect.png" alt="Mark Zuckerberg" class="card-image" draggable="false">
-                    <img src="/CharacterSelectScreen/MarkZuckNameTag.png" alt="Mark Zuckerberg" class="card-nametag" draggable="false">
+                    <img src="/CharacterSelectScreen/MarkZuckSelect.png" alt="Mark Zuckerberg" class="card-image" draggable="false" loading="lazy">
+                    <img src="/CharacterSelectScreen/MarkZuckNameTag.png" alt="Mark Zuckerberg" class="card-nametag" draggable="false" loading="lazy">
                 </div>
             </div>
         </div>
