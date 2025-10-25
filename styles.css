@@ -953,7 +953,7 @@ body {
     z-index: 2;
 }
 
-/* Cherry Blossom Effect */
+/* Cherry Blossom Effect - Optimized */
 .mobile-cherry-blossoms {
     position: absolute;
     top: 0;
@@ -963,16 +963,18 @@ body {
     pointer-events: none;
     z-index: 3;
     overflow: hidden;
+    will-change: transform; /* Optimize for animations */
 }
 
 .cherry-petal {
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     background: #ffb6c1;
     border-radius: 50% 0 50% 0;
     opacity: 0.8;
     animation: cherryFall linear infinite;
+    will-change: transform, opacity; /* Optimize for animations */
 }
 
 .cherry-petal:nth-child(odd) {
@@ -987,8 +989,8 @@ body {
 
 .cherry-petal:nth-child(3n) {
     background: #ffa0b4;
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
 }
 
 @keyframes cherryFall {

@@ -922,7 +922,7 @@ function isMobileDevice() {
 // Show mobile screen if on mobile device
 function checkMobileDevice() {
     console.log('Checking mobile device...');
-    if (isMobileDevice()) {
+    if (isMobileDeviceCached()) {
         console.log('Mobile device detected, showing mobile screen');
         // Hide all other screens
         if (splashScreen) {
@@ -950,7 +950,7 @@ function checkMobileDevice() {
 // Initialize when page loads
 window.addEventListener('DOMContentLoaded', () => {
     // Check for mobile device first - do this immediately
-    if (isMobileDevice()) {
+    if (isMobileDeviceCached()) {
         console.log('Mobile detected on DOMContentLoaded');
         // Immediately hide splash screen
         const splash = document.getElementById('splashScreen');
@@ -991,24 +991,33 @@ window.showMobileScreen = function() {
     }
 };
 
-// Also check on window resize
+// Optimized resize handler with debouncing
+let resizeTimeout;
 window.addEventListener('resize', () => {
-    console.log('Window resized, checking mobile device again...');
-    if (isMobileDevice()) {
-        checkMobileDevice();
-    }
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+        console.log('Window resized, checking mobile device again...');
+        if (isMobileDeviceCached()) {
+            checkMobileDevice();
+        }
+    }, 250); // Debounce resize events
 });
 
-// Cherry Blossom Effect for Mobile
+// Cherry Blossom Effect for Mobile - Optimized
+let cherryBlossomInterval = null;
+let cherryBlossomCreated = false;
+
 function createCherryBlossoms() {
     const cherryContainer = document.getElementById('cherryBlossoms');
-    if (!cherryContainer) return;
+    if (!cherryContainer || cherryBlossomCreated) return;
+    
+    cherryBlossomCreated = true;
     
     // Clear existing petals
     cherryContainer.innerHTML = '';
     
-    // Create multiple petals with better distribution
-    for (let i = 0; i < 25; i++) {
+    // Create fewer petals initially for better performance
+    for (let i = 0; i < 15; i++) {
         const petal = document.createElement('div');
         petal.className = 'cherry-petal';
         
@@ -1026,9 +1035,9 @@ function createCherryBlossoms() {
         cherryContainer.appendChild(petal);
     }
     
-    // Continuously add new petals
-    setInterval(() => {
-        if (cherryContainer.children.length < 30) {
+    // Add new petals less frequently and with fewer petals
+    cherryBlossomInterval = setInterval(() => {
+        if (cherryContainer.children.length < 20) {
             const petal = document.createElement('div');
             petal.className = 'cherry-petal';
             petal.style.left = Math.random() * 100 + '%';
@@ -1036,7 +1045,33 @@ function createCherryBlossoms() {
             petal.style.animationDelay = '0s';
             cherryContainer.appendChild(petal);
         }
-    }, 2000);
+    }, 5000); // Increased interval from 2s to 5s
+}
+
+// Clean up cherry blossom interval when not needed
+function cleanupCherryBlossoms() {
+    if (cherryBlossomInterval) {
+        clearInterval(cherryBlossomInterval);
+        cherryBlossomInterval = null;
+    }
+    cherryBlossomCreated = false;
+}
+
+// Optimized mobile detection with caching
+let mobileDetectionCache = null;
+let lastDetectionTime = 0;
+const DETECTION_CACHE_DURATION = 1000; // Cache for 1 second
+
+function isMobileDeviceCached() {
+    const now = Date.now();
+    if (mobileDetectionCache !== null && (now - lastDetectionTime) < DETECTION_CACHE_DURATION) {
+        return mobileDetectionCache;
+    }
+    
+    const result = isMobileDevice();
+    mobileDetectionCache = result;
+    lastDetectionTime = now;
+    return result;
 }
 
 
